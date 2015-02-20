@@ -97,6 +97,8 @@
 		E78FEBAA1A9557A30079C900 /* Boar.m in Sources */ = {isa = PBXBuildFile; fileRef = E78FEBA91A9557A30079C900 /* Boar.m */; };
 		E78FEBAE1A95582E0079C900 /* Egg.m in Sources */ = {isa = PBXBuildFile; fileRef = E78FEBAD1A95582E0079C900 /* Egg.m */; };
 		E7B2F07F1A9566820091A6D3 /* Fly.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B2F07E1A9566820091A6D3 /* Fly.m */; };
+		E7E480CE1A966E34003F56D6 /* WinLoseDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E480CD1A966E34003F56D6 /* WinLoseDialog.m */; };
+		E7E480D21A968E20003F56D6 /* GamePlay.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E480D11A968E20003F56D6 /* GamePlay.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -215,6 +217,10 @@
 		E78FEBAD1A95582E0079C900 /* Egg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Egg.m; path = Source/Egg.m; sourceTree = "<group>"; };
 		E7B2F07D1A9566820091A6D3 /* Fly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fly.h; sourceTree = "<group>"; };
 		E7B2F07E1A9566820091A6D3 /* Fly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fly.m; sourceTree = "<group>"; };
+		E7E480CC1A966E34003F56D6 /* WinLoseDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WinLoseDialog.h; path = Source/WinLoseDialog.h; sourceTree = "<group>"; };
+		E7E480CD1A966E34003F56D6 /* WinLoseDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WinLoseDialog.m; path = Source/WinLoseDialog.m; sourceTree = "<group>"; };
+		E7E480D01A968E20003F56D6 /* GamePlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamePlay.h; path = Source/GamePlay.h; sourceTree = "<group>"; };
+		E7E480D11A968E20003F56D6 /* GamePlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GamePlay.m; path = Source/GamePlay.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -440,6 +446,10 @@
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				E7E480CC1A966E34003F56D6 /* WinLoseDialog.h */,
+				E7E480CD1A966E34003F56D6 /* WinLoseDialog.m */,
+				E7E480D01A968E20003F56D6 /* GamePlay.h */,
+				E7E480D11A968E20003F56D6 /* GamePlay.m */,
 				E7B2F07D1A9566820091A6D3 /* Fly.h */,
 				E7B2F07E1A9566820091A6D3 /* Fly.m */,
 				E78FEBA81A9557A20079C900 /* Boar.h */,
@@ -821,6 +831,8 @@
 				7A046D8C19E8A20E004C4763 /* MainScene.m in Sources */,
 				E7B2F07F1A9566820091A6D3 /* Fly.m in Sources */,
 				E78FEBAE1A95582E0079C900 /* Egg.m in Sources */,
+				E7E480D21A968E20003F56D6 /* GamePlay.m in Sources */,
+				E7E480CE1A966E34003F56D6 /* WinLoseDialog.m in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
