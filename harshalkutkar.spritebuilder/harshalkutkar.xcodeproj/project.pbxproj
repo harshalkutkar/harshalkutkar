@@ -94,6 +94,7 @@
 		BC5399DA1A44DCC90063F482 /* GLActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5399D51A44DCC90063F482 /* GLActivityKit.framework */; };
 		BC5399DB1A44DCC90063F482 /* JavaFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5399D61A44DCC90063F482 /* JavaFoundation.framework */; };
 		BC5399DC1A44DCC90063F482 /* JavaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5399D71A44DCC90063F482 /* JavaKit.framework */; };
+		E73063301A980E280011B4D2 /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = E730632F1A980E280011B4D2 /* Bird.m */; };
 		E78FEBAA1A9557A30079C900 /* Boar.m in Sources */ = {isa = PBXBuildFile; fileRef = E78FEBA91A9557A30079C900 /* Boar.m */; };
 		E78FEBAE1A95582E0079C900 /* Egg.m in Sources */ = {isa = PBXBuildFile; fileRef = E78FEBAD1A95582E0079C900 /* Egg.m */; };
 		E7B2F07F1A9566820091A6D3 /* Fly.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B2F07E1A9566820091A6D3 /* Fly.m */; };
@@ -211,6 +212,8 @@
 		BC5399D61A44DCC90063F482 /* JavaFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaFoundation.framework; path = "../../../../Library/Application Support/Developer/Shared/Xcode/Platforms/Android.platform/Developer/SDKs/SBAndroid.sdk/System/Library/Frameworks/JavaFoundation.framework"; sourceTree = "<group>"; };
 		BC5399D71A44DCC90063F482 /* JavaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaKit.framework; path = "../../../../Library/Application Support/Developer/Shared/Xcode/Platforms/Android.platform/Developer/SDKs/SBAndroid.sdk/System/Library/Frameworks/JavaKit.framework"; sourceTree = "<group>"; };
 		D352B48019EC608A00829775 /* MetalShaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MetalShaders; path = Source/MetalShaders; sourceTree = "<group>"; };
+		E730632E1A980E280011B4D2 /* Bird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bird.h; path = Source/Bird.h; sourceTree = "<group>"; };
+		E730632F1A980E280011B4D2 /* Bird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bird.m; path = Source/Bird.m; sourceTree = "<group>"; };
 		E78FEBA81A9557A20079C900 /* Boar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Boar.h; path = Source/Boar.h; sourceTree = "<group>"; };
 		E78FEBA91A9557A30079C900 /* Boar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Boar.m; path = Source/Boar.m; sourceTree = "<group>"; };
 		E78FEBAC1A95582E0079C900 /* Egg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Egg.h; path = Source/Egg.h; sourceTree = "<group>"; };
@@ -447,6 +450,8 @@
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
 				E7E480CC1A966E34003F56D6 /* WinLoseDialog.h */,
+				E730632E1A980E280011B4D2 /* Bird.h */,
+				E730632F1A980E280011B4D2 /* Bird.m */,
 				E7E480CD1A966E34003F56D6 /* WinLoseDialog.m */,
 				E7E480D01A968E20003F56D6 /* GamePlay.h */,
 				E7E480D11A968E20003F56D6 /* GamePlay.m */,
@@ -828,6 +833,7 @@
 			files = (
 				B73789871807631A0076A88C /* main.m in Sources */,
 				E78FEBAA1A9557A30079C900 /* Boar.m in Sources */,
+				E73063301A980E280011B4D2 /* Bird.m in Sources */,
 				7A046D8C19E8A20E004C4763 /* MainScene.m in Sources */,
 				E7B2F07F1A9566820091A6D3 /* Fly.m in Sources */,
 				E78FEBAE1A95582E0079C900 /* Egg.m in Sources */,

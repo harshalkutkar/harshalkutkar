@@ -2,6 +2,7 @@
 #import "CCPhysics+ObjectiveChipmunk.h"
 #import "Fly.h"
 #import "GamePlay.h"
+#include "Bird.h"
 
 
 @implementation MainScene{
@@ -9,7 +10,6 @@
     CCSprite *_item0;
     Boolean _dragMode;
     NSInteger _dragIndex;
-    NSInteger rows[7];
     CCNode *_levelNode;
     CCLabelTTF *_score;
     int score;
@@ -28,33 +28,25 @@
     _dragMode = false;
     _dragIndex = 0;
     
-    [self generateEnemies];
-    
-    //rows (y cord arrays)
-    rows[0] = 286;
-    rows[1] = 248;
-    rows[2] = 210;
-    rows[3] = 170;
-    rows[4] = 127;
-    rows[5] = 88;
-    rows[6] = 70;
+ 
     
     //score
     score = 0;
     
+       [self generateEnemies];
     [self randomTimeScheduler];
 }
 
-- (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair boar:(CCNode *)nodeA egg:(CCNode *)nodeB {
-    NSLog(@"Collision Occurred between Boar & Egg");
+- (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair bird:(CCNode *)nodeA egg:(CCNode *)nodeB {
+    NSLog(@"Collision Occurred between BirdZero & Egg");
     [self eggRemoved:nodeB];
     [self showWinLoseDialog:@"You lose!"];
   
 }
 
-- (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair boar:(CCNode *)nodeA fly:(CCNode *)nodeB {
-    NSLog(@"Collision Occurred between Boar & Fly");
-    [self boarRemoved:nodeA];
+- (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair bird:(CCNode *)nodeA fly:(CCNode *)nodeB {
+    NSLog(@"Collision Occurred between Bird & Fly");
+    [self birdRemoved:nodeA];
     [self flyRemoved:nodeB];
     score += 100;
     [_score setString:[NSString stringWithFormat:@"%d",score]];
@@ -74,8 +66,8 @@
     [egg removeFromParent];
 }
 
-- (void)boarRemoved:(CCNode *)boar {
-    [boar removeFromParent];
+- (void)birdRemoved:(CCNode *)bird {
+    [bird removeFromParent];
 }
 
 - (void)flyRemoved:(CCNode *)fly {
@@ -122,10 +114,22 @@
 
 - (void) generateEnemies
 {
-
+    
     int i = arc4random() % 6;
-    CCNode* enemy = [CCBReader load:@"Boar"];
-    enemy.position = CGPointMake(0, rows[i]);
+    
+    //Random Y generation
+    float low_bound = 70;
+    float high_bound = 280;
+    int rndY = (((float)arc4random()/0x100000000)*(high_bound-low_bound)+low_bound);
+    
+    
+    //Create a Bird
+    Bird* enemy = (Bird*)[CCBReader load:@"BirdZero"];
+    
+    float randomNum = ((float)rand() / RAND_MAX) * 3;
+    //Set Params
+    [enemy setSpeed:randomNum];
+    enemy.position = CGPointMake(0, rndY);
     enemy.scaleX = 0.3;
     enemy.scaleY = 0.3;
     [_physicsNode addChild:enemy];
@@ -140,7 +144,9 @@
     [self performSelector:@selector(randomTimeScheduler) withObject:self afterDelay:nextTimeOfCall];
     for (int i=0;i<time;i++)
     {
-    [self generateEnemies];
+        float randomNum = ((float)rand() / RAND_MAX) * 3;     // now in seconds
+        [self scheduleOnce:@selector(generateEnemies) delay:randomNum];
+        [self generateEnemies];
     }
     
 }

@@ -1,5 +1,5 @@
 //
-//  Boar.h
+//  Bird.h
 //  harshalkutkar
 //
 //  Created by Harsh Alkutkar on 2/18/15.
@@ -8,8 +8,8 @@
 
 #import "CCSprite.h"
 
-@interface Boar : CCSprite{
- float speed;
+@interface Bird : CCSprite{
+    float speed;
 }
 
 @property (nonatomic)     CCTime _updateTime;

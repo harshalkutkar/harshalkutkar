@@ -78,6 +78,27 @@
 			<key>previewFolderHidden</key>
 			<true/>
 		</dict>
+		<key>Assets/bird0.png</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/bird1.png</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/bird2.png</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
 		<key>Assets/boar_walk (1).png</key>
 		<dict>
 			<key>scaleFrom</key>
@@ -144,6 +165,13 @@
 		</dict>
 		<key>Assets/snowy_mountain.png</key>
 		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/tree.png</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>

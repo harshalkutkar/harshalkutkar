@@ -1,29 +1,29 @@
 //
-//  Boar.m
+//  Bird.m
 //  harshalkutkar
 //
 //  Created by Harsh Alkutkar on 2/18/15.
 //  Copyright (c) 2015 Apportable. All rights reserved.
 //
 
-#import "Boar.h"
+#import "Bird.h"
 
 
-@implementation Boar
+@implementation Bird
 
 
 
 @synthesize _updateTime;
 
 - (void)didLoadFromCCB {
-    NSLog(@"Boar Loaded");
+    NSLog(@"BirdZero Loaded");
     
     //set collision type
-    self.physicsBody.collisionType = @"boar";
+    self.physicsBody.collisionType = @"bird";
     
     //set default speed
     self.speed = 1.0;
-
+    
 }
 
 - (float) getSpeed
@@ -47,8 +47,8 @@
     
     /*
      CGPoint pos = self.position;
-    pos.x += 10;
-    self.position = pos;
+     pos.x += 10;
+     self.position = pos;
      */
 }
 
