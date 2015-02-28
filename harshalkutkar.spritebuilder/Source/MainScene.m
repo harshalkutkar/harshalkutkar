@@ -92,8 +92,8 @@
        // create a 'hero' sprite
        CCNode* fly = [CCBReader load:@"Fly"];
     
-           fly.scaleX = 0.9;
-           fly.scaleY = 0.9;
+           fly.scaleX = 0.2;
+           fly.scaleY = 0.2;
        [_physicsNode addChild:fly];
        // place the sprite at the touch location
        fly.position = touchLocation;
@@ -129,7 +129,7 @@
     float randomNum = ((float)rand() / RAND_MAX) * 3;
     //Set Params
     [enemy setSpeed:randomNum];
-    enemy.position = CGPointMake(0, rndY);
+    enemy.position = CGPointMake(100, rndY);
     enemy.scaleX = 0.3;
     enemy.scaleY = 0.3;
     [_physicsNode addChild:enemy];
