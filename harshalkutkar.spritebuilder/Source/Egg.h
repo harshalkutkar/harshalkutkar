@@ -10,4 +10,9 @@
 
 @interface Egg : CCSprite
 
+@property BOOL isAlive;
+
+- (void) crackEgg;
+
+
 @end

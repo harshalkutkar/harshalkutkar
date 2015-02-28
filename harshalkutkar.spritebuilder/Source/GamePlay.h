@@ -9,6 +9,9 @@
 #import "CCScene.h"
 
 @interface GamePlay : CCNode
+{
+      float                mTimeInSec;
+}
 
 + (instancetype)sharedInstance;
 - (void) restart;

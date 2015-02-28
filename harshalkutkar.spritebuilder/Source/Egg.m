@@ -9,10 +9,26 @@
 #import "Egg.h"
 
 @implementation Egg
+@synthesize isAlive;
+
 
 - (void)didLoadFromCCB {
     NSLog(@"Egg Loaded");
     self.physicsBody.collisionType = @"egg";
+    isAlive = true;
     
 }
+
+- (void) crackEgg {
+    CCAnimationManager* animationManager = self.animationManager;
+    [animationManager runAnimationsForSequenceNamed:@"Crack"];
+
+
+}
+
+- (void) crackedEgg {
+    isAlive = false;
+    [self removeFromParentAndCleanup:true];
+}
+
 @end

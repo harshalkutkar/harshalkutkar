@@ -27,7 +27,13 @@
     NSLog(@"Assigned Shared Instance");
     sharedInstance = self;
     self = [ super init ];
+    
+    //set time
+    mTimeInSec = 0.0f;
+    
     return( self );
+    
+    
 }
 
 - (void)didLoadFromCCB {
@@ -46,6 +52,8 @@
     [self didLoadFromCCB];
     
 }
+
+
 
 
 

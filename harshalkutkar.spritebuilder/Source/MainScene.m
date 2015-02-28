@@ -3,6 +3,7 @@
 #import "Fly.h"
 #import "GamePlay.h"
 #include "Bird.h"
+#import "Egg.h"
 
 
 @implementation MainScene{
@@ -13,7 +14,10 @@
     CCNode *_levelNode;
     CCLabelTTF *_score;
     int score;
-    
+    CCNode *_eggNode;
+    NSArray *eggStartingLocations;
+    NSMutableArray *allEggs;
+    int aliveCount;
 }
 
 
@@ -28,19 +32,61 @@
     _dragMode = false;
     _dragIndex = 0;
     
- 
+    [self initEggLocations];
     
     //score
     score = 0;
     
        [self generateEnemies];
     [self randomTimeScheduler];
+    
+    
 }
 
-- (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair bird:(CCNode *)nodeA egg:(CCNode *)nodeB {
+- (void) initEggLocations
+{
+    eggStartingLocations = [NSArray arrayWithObjects:
+                              [NSValue valueWithCGPoint:CGPointMake(475, 193)],
+                              [NSValue valueWithCGPoint:CGPointMake(441, 168)],
+                              [NSValue valueWithCGPoint:CGPointMake(484, 136)],
+                              [NSValue valueWithCGPoint:CGPointMake(507, 220)],
+                            nil
+                            ];
+    
+    //Keeping track of live eggs
+    
+    allEggs = [NSMutableArray new];
+    
+    
+    for (int i=0; i<eggStartingLocations.count;i++)
+    {
+        NSValue *val = [eggStartingLocations objectAtIndex:i];
+        CGPoint p = [val CGPointValue];
+        //Create an Egg
+        Egg* egg = (Egg*)[CCBReader load:@"Egg"];
+        egg.position = p;
+        egg.scaleX = 0.5f;
+        egg.scaleY = 0.5f;
+        [_eggNode addChild:egg];
+        [allEggs addObject:egg];
+        aliveCount++;
+    }
+}
+
+- (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair bird:(Bird *)nodeA egg:(Egg *)nodeB {
     NSLog(@"Collision Occurred between BirdZero & Egg");
+    [self birdRemoved:nodeA];
     [self eggRemoved:nodeB];
-    [self showWinLoseDialog:@"You lose!"];
+    
+    for (Egg *e in allEggs)
+    {
+        if (e.isAlive == false)
+        {
+            aliveCount--;
+        }
+    }
+    
+    if (aliveCount <= 0) { [self showWinLoseDialog:@"You lose!"]; }
   
 }
 
@@ -62,8 +108,9 @@
     
 }
 
-- (void)eggRemoved:(CCNode *)egg {
-    [egg removeFromParent];
+- (void)eggRemoved:(Egg *)egg {
+    [egg crackEgg];
+    
 }
 
 - (void)birdRemoved:(CCNode *)bird {
@@ -92,8 +139,8 @@
        // create a 'hero' sprite
        CCNode* fly = [CCBReader load:@"Fly"];
     
-           fly.scaleX = 0.2;
-           fly.scaleY = 0.2;
+           fly.scaleX = 0.3;
+           fly.scaleY = 0.3;
        [_physicsNode addChild:fly];
        // place the sprite at the touch location
        fly.position = touchLocation;
@@ -150,6 +197,7 @@
     }
     
 }
+
 
 
 

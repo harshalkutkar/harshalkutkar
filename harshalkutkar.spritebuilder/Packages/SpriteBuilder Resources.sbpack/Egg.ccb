@@ -16,7 +16,7 @@
 	<key>currentResolution</key>
 	<integer>0</integer>
 	<key>currentSequenceId</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>docDimensionsType</key>
 	<integer>1</integer>
 	<key>fileType</key>
@@ -119,7 +119,7 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.066666670143604279</real>
+							<real>0.13333334028720856</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
@@ -137,7 +137,7 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.13333334028720856</real>
+							<real>0.26666668057441711</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
@@ -155,7 +155,7 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.20000000298023224</real>
+							<real>0.40000000596046448</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
@@ -173,7 +173,7 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.26666668057441711</real>
+							<real>0.53333336114883423</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
@@ -191,7 +191,7 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.3333333432674408</real>
+							<real>0.66666668653488159</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
@@ -209,7 +209,7 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.40000000596046448</real>
+							<real>0.80000001192092896</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
@@ -227,7 +227,7 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.46666666865348816</real>
+							<real>0.93333333730697632</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
@@ -418,8 +418,6 @@
 				<array/>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 		<key>seqExpanded</key>
 		<true/>
 	</dict>
@@ -500,24 +498,41 @@
 			<key>callbackChannel</key>
 			<dict>
 				<key>keyframes</key>
-				<array/>
+				<array>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
+						<real>0.93333333730697632</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string>crackedEgg</string>
+							<integer>1</integer>
+						</array>
+					</dict>
+				</array>
 				<key>type</key>
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
 			<integer>-1</integer>
 			<key>length</key>
-			<real>0.46666666865348816</real>
+			<real>0.93333333730697632</real>
 			<key>name</key>
 			<string>Crack</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.46666666865348816</real>
+			<real>0.93333333730697632</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
-			<real>512</real>
+			<real>306.403076171875</real>
 			<key>sequenceId</key>
 			<integer>1</integer>
 			<key>soundChannel</key>
