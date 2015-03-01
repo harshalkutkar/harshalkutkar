@@ -1,13 +1,16 @@
-#import "MainScene.h"
+#import "Level1.h"
 #import "CCPhysics+ObjectiveChipmunk.h"
 #import "Fly.h"
 #import "GamePlay.h"
 #include "Bird.h"
 #import "Egg.h"
 
+//number of items you can pick from in the left menu
+const int NUMBER_ITEMS = 1;
 
-@implementation MainScene{
+@implementation Level1{
     CCPhysicsNode *_physicsNode;
+    CCButton *_button0;
     CCSprite *_item0;
     Boolean _dragMode;
     NSInteger _dragIndex;
@@ -18,6 +21,9 @@
     NSArray *eggStartingLocations;
     NSMutableArray *allEggs;
     int aliveCount;
+    CCLabelTTF *_lblitem0count;
+    float gameTime;
+    int lives[NUMBER_ITEMS];
 }
 
 
@@ -27,6 +33,10 @@
     
     _physicsNode.collisionDelegate = self;
     self.userInteractionEnabled = YES;
+    
+    //initialize the lives
+    lives[0] = 1;
+    [_lblitem0count setString: [NSString stringWithFormat:@"%d",lives[0]] ];
     
     //Setup
     _dragMode = false;
@@ -71,6 +81,9 @@
         [allEggs addObject:egg];
         aliveCount++;
     }
+    
+    //increment count
+    [self incrementFirstLife];
 }
 
 - (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair bird:(Bird *)nodeA egg:(Egg *)nodeB {
@@ -122,9 +135,16 @@
 }
 
 - (void)button0 {
+    
+    if (lives[0] > 0)
+    {
     CCLOG(@"Drag mode on");
-    _dragIndex = 1;
+    _dragIndex = 0; //since theres only one button
     _dragMode = true;
+    }
+   
+    
+    
 }
 
 //Hacky touch and place.
@@ -132,7 +152,7 @@
 {
    if (_dragMode)
    {
-       if (_dragIndex == 1)
+       if (_dragIndex == 0)
        {
        // we want to know the location of our touch in this scene
        CGPoint touchLocation = [touch locationInNode:self];
@@ -144,8 +164,11 @@
        [_physicsNode addChild:fly];
        // place the sprite at the touch location
        fly.position = touchLocation;
-           
-         
+       
+        //decrement the count
+        lives[_dragIndex]--;
+        [self updateLabels];
+        [self disableOrEnableButtons];
        }
        
        
@@ -156,7 +179,9 @@
 
 -(void)update:(CCTime)delta
 {
+    gameTime += (delta);
     
+   
 }
 
 - (void) generateEnemies
@@ -199,9 +224,34 @@
 }
 
 
+- (void) incrementFirstLife
+{
+    lives[0]++;
+    [_lblitem0count setString: [NSString stringWithFormat:@"%d",lives[0]] ];
+    [self disableOrEnableButtons];
+    [self scheduleOnce:@selector(incrementFirstLife) delay:5.0f];
+   
+   
+}
 
+-(void) updateLabels
+{
+      [_lblitem0count setString: [NSString stringWithFormat:@"%d",lives[0]] ];
+}
+    
 
-
+- (void) disableOrEnableButtons
+{
+    //also disable buttons
+    if (lives[0] <= 0)
+    {
+        [_button0 setEnabled:false];
+    }
+    else
+    {
+        [_button0 setEnabled:true];
+    }
+}
 
 
 

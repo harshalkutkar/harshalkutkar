@@ -38,7 +38,7 @@
 
 - (void)didLoadFromCCB {
     //Load the level
-    level = [CCBReader loadAsScene:@"MainScene"];
+    level = [CCBReader loadAsScene:@"Level1"];
     [_levelNode addChild:level];
     [GamePlay sharedInstance];
    
