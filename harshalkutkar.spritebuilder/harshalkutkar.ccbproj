@@ -80,22 +80,16 @@
 		</dict>
 		<key>Assets/bird0.png</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
 		<key>Assets/bird1.png</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
 		<key>Assets/bird2.png</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
@@ -146,78 +140,56 @@
 		</dict>
 		<key>Assets/egg1.png</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
 		<key>Assets/egg_crack0.png</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
 		<key>Assets/egg_crack1.png</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
 		<key>Assets/egg_crack2.png</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
 		<key>Assets/egg_crack3.png</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
 		<key>Assets/egg_crack4.png</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
 		<key>Assets/egg_crack5.png</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
 		<key>Assets/egg_crack6.png</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
 		<key>Assets/egg_crack7.png</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
 		<key>Assets/fly-1@4x.png</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>scaleFrom</key>
 			<integer>4</integer>
 		</dict>
 		<key>Assets/fly-2@4x.png</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>scaleFrom</key>
 			<integer>4</integer>
 		</dict>
@@ -233,8 +205,6 @@
 		</dict>
 		<key>Assets/tree.png</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>

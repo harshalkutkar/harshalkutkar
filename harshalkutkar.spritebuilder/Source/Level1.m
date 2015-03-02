@@ -24,6 +24,7 @@ const int NUMBER_ITEMS = 1;
     CCLabelTTF *_lblitem0count;
     float gameTime;
     int lives[NUMBER_ITEMS];
+    CGPoint lastEggLocation;
 }
 
 
@@ -47,7 +48,7 @@ const int NUMBER_ITEMS = 1;
     //score
     score = 0;
     
-       [self generateEnemies];
+    [self generateEnemies];
     [self randomTimeScheduler];
     
     
@@ -67,24 +68,39 @@ const int NUMBER_ITEMS = 1;
     
     allEggs = [NSMutableArray new];
     
+    //add eggs from a configuration
+    [self addEggsFromConfig];
     
+    //increment count
+    [self incrementFirstLife];
+}
+
+- (void) addEggsFromConfig
+{
     for (int i=0; i<eggStartingLocations.count;i++)
     {
         NSValue *val = [eggStartingLocations objectAtIndex:i];
         CGPoint p = [val CGPointValue];
         //Create an Egg
-        Egg* egg = (Egg*)[CCBReader load:@"Egg"];
-        egg.position = p;
-        egg.scaleX = 0.5f;
-        egg.scaleY = 0.5f;
-        [_eggNode addChild:egg];
-        [allEggs addObject:egg];
-        aliveCount++;
+        [self addEggsAtCertainPoint:p];
+        
     }
-    
-    //increment count
-    [self incrementFirstLife];
 }
+
+- (void) addEggsAtCertainPoint:(CGPoint) p
+{
+    Egg* egg = (Egg*)[CCBReader load:@"Egg"];
+    egg.isAlive = true;
+    egg.position = p;
+    egg.scaleX = 0.5f;
+    egg.scaleY = 0.5f;
+    [_eggNode addChild:egg];
+    [allEggs addObject:egg];
+    aliveCount++;
+
+    
+}
+
 
 - (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair bird:(Bird *)nodeA egg:(Egg *)nodeB {
     NSLog(@"Collision Occurred between BirdZero & Egg");
@@ -127,21 +143,23 @@ const int NUMBER_ITEMS = 1;
 }
 
 - (void)birdRemoved:(CCNode *)bird {
-    [bird removeFromParent];
+    NSLog(@"Bird Removed from Parent");
+    [bird removeFromParentAndCleanup:true];
 }
 
 - (void)flyRemoved:(CCNode *)fly {
-    [fly removeFromParent];
+    [fly removeFromParentAndCleanup:true];
 }
 
 - (void)button0 {
     
     if (lives[0] > 0)
     {
-    CCLOG(@"Drag mode on");
+    
     _dragIndex = 0; //since theres only one button
     _dragMode = true;
     }
+    CCLOG(@"Drag mode on");
    
     
     
@@ -154,16 +172,24 @@ const int NUMBER_ITEMS = 1;
    {
        if (_dragIndex == 0)
        {
+           
+        NSLog(@"Drag Index : %d",_dragIndex);
        // we want to know the location of our touch in this scene
        CGPoint touchLocation = [touch locationInNode:self];
+           
        // create a 'hero' sprite
        CCNode* fly = [CCBReader load:@"Fly"];
+        NSLog(@"Read in Fly from CCBReader ");
     
            fly.scaleX = 0.3;
            fly.scaleY = 0.3;
+           
        [_physicsNode addChild:fly];
+        NSLog(@"Fly added to physicsnode");
        // place the sprite at the touch location
        fly.position = touchLocation;
+           
+            NSLog(@"Fly placed");
        
         //decrement the count
         lives[_dragIndex]--;
@@ -193,10 +219,11 @@ const int NUMBER_ITEMS = 1;
     float low_bound = 70;
     float high_bound = 280;
     int rndY = (((float)arc4random()/0x100000000)*(high_bound-low_bound)+low_bound);
-    
+    NSLog(@"Generated Random Y");
     
     //Create a Bird
     Bird* enemy = (Bird*)[CCBReader load:@"BirdZero"];
+    NSLog(@"Generated Bird Enemy");
     
     float randomNum = ((float)rand() / RAND_MAX) * 3;
     //Set Params
@@ -204,7 +231,9 @@ const int NUMBER_ITEMS = 1;
     enemy.position = CGPointMake(100, rndY);
     enemy.scaleX = 0.3;
     enemy.scaleY = 0.3;
+    NSLog(@"Set Properties");
     [_physicsNode addChild:enemy];
+    NSLog(@"Enemy added to physicsnode");
  
     
 }
@@ -214,24 +243,47 @@ const int NUMBER_ITEMS = 1;
     int nextTimeOfCall = 3+time;
     NSLog(@"it will be called after:%d",nextTimeOfCall);
     [self performSelector:@selector(randomTimeScheduler) withObject:self afterDelay:nextTimeOfCall];
-    for (int i=0;i<time;i++)
-    {
-        float randomNum = ((float)rand() / RAND_MAX) * 3;     // now in seconds
+
+         float randomNum = ((float)rand() / RAND_MAX) * 3;     // now in seconds
+         NSLog(@"irandom:%d",randomNum);
         [self scheduleOnce:@selector(generateEnemies) delay:randomNum];
         [self generateEnemies];
-    }
     
 }
 
 
 - (void) incrementFirstLife
 {
+    
     lives[0]++;
     [_lblitem0count setString: [NSString stringWithFormat:@"%d",lives[0]] ];
     [self disableOrEnableButtons];
     [self scheduleOnce:@selector(incrementFirstLife) delay:5.0f];
+    
+    if (gameTime > 4.5)
+    {
+    //find the first (Active) egg and break it.
+    for (Egg *e in allEggs)
+    {
+        if (e.isAlive)
+        {
+            //Save it's position
+            lastEggLocation = e.position;
+            [e  explodeLiveEgg];
+            [self scheduleOnce:@selector(replenishLastEgg) delay:3.0f];
+            break;
+        }
+    }
+    }
+ 
+    
    
    
+}
+
+- (void) replenishLastEgg
+{
+    [self addEggsAtCertainPoint:lastEggLocation];
 }
 
 -(void) updateLabels
@@ -242,6 +294,7 @@ const int NUMBER_ITEMS = 1;
 
 - (void) disableOrEnableButtons
 {
+   
     //also disable buttons
     if (lives[0] <= 0)
     {
@@ -251,6 +304,7 @@ const int NUMBER_ITEMS = 1;
     {
         [_button0 setEnabled:true];
     }
+    NSLog(@"Disable/Enable Buttons done.");
 }
 
 

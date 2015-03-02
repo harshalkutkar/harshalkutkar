@@ -13,6 +13,7 @@
 - (void)didLoadFromCCB {
     NSLog(@"Fly Loaded");
     self.physicsBody.collisionType = @"fly";
+    
 }
 
 @end

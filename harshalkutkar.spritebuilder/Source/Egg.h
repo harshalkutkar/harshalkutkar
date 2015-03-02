@@ -13,6 +13,6 @@
 @property BOOL isAlive;
 
 - (void) crackEgg;
-
+- (void) explodeLiveEgg;
 
 @end
