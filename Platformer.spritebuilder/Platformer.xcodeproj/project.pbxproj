@@ -96,6 +96,7 @@
 		BC5399DC1A44DCC90063F482 /* JavaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5399D71A44DCC90063F482 /* JavaKit.framework */; };
 		E7004DCC1ABE7B0500492523 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7004DCB1ABE7B0500492523 /* CoreMotion.framework */; };
 		E7004DD01ABE80C600492523 /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = E7004DCF1ABE80C600492523 /* Ball.m */; };
+		E71118911AC204020061C6BE /* Pipe.m in Sources */ = {isa = PBXBuildFile; fileRef = E71118901AC204020061C6BE /* Pipe.m */; };
 		E73A10741ABA7E8200279FF1 /* References.txt in Resources */ = {isa = PBXBuildFile; fileRef = E73A10731ABA7E8200279FF1 /* References.txt */; };
 /* End PBXBuildFile section */
 
@@ -212,6 +213,8 @@
 		E7004DCB1ABE7B0500492523 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		E7004DCE1ABE80C600492523 /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
 		E7004DCF1ABE80C600492523 /* Ball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ball.m; sourceTree = "<group>"; };
+		E711188F1AC204020061C6BE /* Pipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pipe.h; sourceTree = "<group>"; };
+		E71118901AC204020061C6BE /* Pipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pipe.m; sourceTree = "<group>"; };
 		E73A10731ABA7E8200279FF1 /* References.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = References.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -439,6 +442,8 @@
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				E711188F1AC204020061C6BE /* Pipe.h */,
+				E71118901AC204020061C6BE /* Pipe.m */,
 				E7004DCE1ABE80C600492523 /* Ball.h */,
 				E7004DCF1ABE80C600492523 /* Ball.m */,
 				D352B48019EC608A00829775 /* MetalShaders */,
@@ -814,6 +819,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E71118911AC204020061C6BE /* Pipe.m in Sources */,
 				E7004DD01ABE80C600492523 /* Ball.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				7A046D8C19E8A20E004C4763 /* MainScene.m in Sources */,

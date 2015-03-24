@@ -1,7 +1,8 @@
 #import "MainScene.h"
 #import <CoreMotion/CoreMotion.h>
-
+#import "Pipe.h"
 #import "Ball.h"
+#import "CCPhysics+ObjectiveChipmunk.h"
 
 
 @implementation MainScene
@@ -29,9 +30,10 @@
     _ball.position = ccp(162,558);
     [_physicsNode addChild:_ball];
     
+   
     
     
-    CCActionFollow *follow = [CCActionFollow actionWithTarget:_ball];
+    CCActionFollow *follow = [CCActionFollow actionWithTarget:_ball worldBoundary:self.boundingBox];
     [self runAction:follow];
     
     
@@ -56,14 +58,8 @@
 {
     //get the size of screen
     CGSize s = [CCDirector sharedDirector].viewSize;
-    NSLog(@"Width: %f",s.width);
-    //set the new position
-    _rotatingBlock.position = ccp(_rotatingBlock.position.x+1, _rotatingBlock.position.y);
-    if (_rotatingBlock.position.x > (s.width))
-    {
-        _rotatingBlock.position =  ccp(0,_rotatingBlock.position.y);
-    }
     
+       
     [self boundsCheck];
    
 }
@@ -72,15 +68,19 @@
 {
     
     
-    if (_ball.position.y < -550)
+    if (_ball.position.y < 33)
     {
         CCScene *scene =  [CCBReader loadAsScene:@"LoseDialog"];
         [[CCDirector sharedDirector] replaceScene: scene withTransition: [CCTransition transitionCrossFadeWithDuration: 0.5]];
-
     }
+    
+    
     
 }
 
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair pipe:(CCNode *)nodeA ball:(CCNode *)nodeB {
+    NSLog(@"Collision ");
+}
 
 
 

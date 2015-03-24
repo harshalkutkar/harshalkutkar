@@ -10,4 +10,12 @@
 
 @implementation Pipe
 
+- (void)didLoadFromCCB {
+    
+    NSLog(@"Pipe Instantiated");
+    
+    //setting up the physics body
+    self.physicsBody.collisionType = @"redpipe";
+}
+
 @end

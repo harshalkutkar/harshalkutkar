@@ -8,13 +8,11 @@
 
 #import "Ball.h"
 #import <CoreMotion/CoreMotion.h>
+#import "CCPhysics+ObjectiveChipmunk.h"
 
 @implementation Ball
 {
-    
     CMMotionManager *_motionManager;
-
-    
 }
 
 - (id)init {
@@ -28,6 +26,9 @@
 - (void)didLoadFromCCB {
     _motionManager = [[CMMotionManager alloc] init];
     NSLog(@"Ball Instantiated");
+    
+    //setting up the physics body
+    self.physicsBody.collisionType = @"ball";
 }
 
 #pragma Accelerometer
@@ -62,7 +63,7 @@
      */
     
     //acceleration in the X direction = the impulse being appplied. Works OK.
-    [self.physicsBody applyImpulse:ccp(acceleration.x*2, 0.0f )];
+    [self.physicsBody applyImpulse:ccp(acceleration.x, 0.0f )];
     
  
     
@@ -79,10 +80,12 @@
     
     
     //print out ball position
-    NSLog(@"Ball Pos %f %f",self.position.x,self.position.y);
+    //NSLog(@"Ball Pos %f %f",self.position.x,self.position.y);
     
     
 }
+
+
 
 
 @end

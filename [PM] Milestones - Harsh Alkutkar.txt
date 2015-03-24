@@ -1,0 +1,32 @@
+
+Weekly Milestones ========
+
+Week 1. Mar 24
+(Done.) Experiment with new game mechanics. Finalize game mechanism.  
+
+Week 2. Mar 31
+Different levels. 
+Harder types of obstacles. 
+Changing the physics. 
+
+Week 3. April 7.
+Have some power-ups. 
+
+Week 4. April 14. 
+Make a user tutorial. 
+
+Week 5. 
+Play testing. 
+Make 2 versions: with/without time constrain. 
+
+Week 6.  
+Add collectables. 
+
+
+Optional features ========
+
+Progression Map. 
+FB connection. 
+
+
+
