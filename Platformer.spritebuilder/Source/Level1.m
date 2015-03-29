@@ -1,4 +1,4 @@
-#import "MainScene.h"
+#import "Level1.h"
 #import <CoreMotion/CoreMotion.h>
 #import "Pipe.h"
 #import "Ball.h"
@@ -7,7 +7,7 @@
 #import "CCPhysics+ObjectiveChipmunk.h"
 
 
-@implementation MainScene
+@implementation Level1
 {
     Ball *_ball;
     CCPhysicsNode *_physicsNode;
@@ -29,30 +29,35 @@
 
 - (void)didLoadFromCCB {
    
-    
+    //Make sure we get the callback after a collision.
     _physicsNode.collisionDelegate = self;
     
+    
+    //Load the initial ball at the top
     _ball = (Ball*) [CCBReader load:@"Ball"];
     _ball.position = ccp(162,558);
+    
+    //Add it to the physics node.
     [_physicsNode addChild:_ball];
 
    
+    //Set the Number of Keys collected to zero:
+    [[GameManager sharedGameManager] setKeys:0];
     
+    //Set the current level to one.
+    [[GameManager sharedGameManager] setCurrentLevel:1];
     
+    //Set the camera to follow the ball (might need it later)
     CCActionFollow *follow = [CCActionFollow actionWithTarget:_ball worldBoundary:self.boundingBox];
     [self runAction:follow];
     
     
+    //Make sure user interaction is enabled.
     self.userInteractionEnabled = YES;
     
-    //get the size of screen
-     CGSize s = [CCDirector sharedDirector].viewSize;
-    
-    
-    // set the rotation
+
+    // if you have a rotating block variable
     CCActionRotateBy *rot = [CCActionRotateBy actionWithDuration:1 angle:360];
-    
-    
     [_rotatingBlock runAction:[CCActionRepeatForever actionWithAction:rot]];
     
  
@@ -62,27 +67,14 @@
 
 - (void) update:(CCTime)delta
 {
-    //get the size of screen
-    CGSize s = [CCDirector sharedDirector].viewSize;
-    
-       
-    [self boundsCheck];
-   
+  
 }
 
--(void) boundsCheck
-{
-    
-    
-    if (_ball.position.y < 33)
-    {
-        CCScene *scene =  [CCBReader loadAsScene:@"LoseDialog"];
-        [[CCDirector sharedDirector] replaceScene: scene withTransition: [CCTransition transitionCrossFadeWithDuration: 0.5]];
-    }
-    
-    
-    
-}
+
+/*
+ *  Physics Collision Handlers
+ *  Collision between a ball and a pipe.
+ */
 
  - (BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair ball:(CCNode *)nodeA pipe:(CCNode *)nodeB
 {
@@ -93,7 +85,8 @@
     
     if (hasKeys)
     {
-        //Enable the Pipe
+        //Enable the Pipe (change the hue // todo)
+        
         
         //Show the Win Dialog
         CCScene *scene =  [CCBReader loadAsScene:@"WinDialog"];

@@ -8,6 +8,6 @@
 
 #import "CCScene.h"
 
-@interface LoseDialog : CCScene
+@interface LoseDialog : CCNode
 
 @end

@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		5B121030197484FA004C1E1D /* PlatformerActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12102F197484FA004C1E1D /* PlatformerActivity.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
-		7A046D8C19E8A20E004C4763 /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7378993180767190076A88C /* MainScene.m */; };
+		7A046D8C19E8A20E004C4763 /* Level1.m in Sources */ = {isa = PBXBuildFile; fileRef = B7378993180767190076A88C /* Level1.m */; };
 		7A40360419DDEE84007B6E8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A40360319DDEE84007B6E8F /* main.m */; };
-		7A4036E819DE3F33007B6E8F /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7378993180767190076A88C /* MainScene.m */; };
+		7A4036E819DE3F33007B6E8F /* Level1.m in Sources */ = {isa = PBXBuildFile; fileRef = B7378993180767190076A88C /* Level1.m */; };
 		7A4036EB19DE3F8E007B6E8F /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		7A4036EC19DE3F90007B6E8F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3117B978D7009739AE /* QuartzCore.framework */; };
 		7A4036EE19DE3F93007B6E8F /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3517B978D7009739AE /* OpenAL.framework */; };
@@ -44,7 +44,7 @@
 		7A97911719E631C6001FFC4D /* libcocos2d-mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A97910419E62E40001FFC4D /* libcocos2d-mac.a */; };
 		7A97911819E631CD001FFC4D /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9790FE19E62E40001FFC4D /* libcocos2d.a */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
-		927F619E196C771E000F43EF /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7378993180767190076A88C /* MainScene.m */; };
+		927F619E196C771E000F43EF /* Level1.m in Sources */ = {isa = PBXBuildFile; fileRef = B7378993180767190076A88C /* Level1.m */; };
 		927F61A5196C771E000F43EF /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3517B978D7009739AE /* OpenAL.framework */; };
 		927F61A9196C771E000F43EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3D17B978D7009739AE /* Foundation.framework */; };
 		927F61AA196C771E000F43EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3F17B978D7009739AE /* CoreGraphics.framework */; };
@@ -101,6 +101,9 @@
 		E7E80DB41AC616CC0061BF1C /* Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E80DB31AC616CC0061BF1C /* Key.m */; };
 		E7E80DBB1AC61E940061BF1C /* LoseDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E80DBA1AC61E940061BF1C /* LoseDialog.m */; };
 		E7F0ABE31AC7B55C004F8581 /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0ABE21AC7B55C004F8581 /* GameManager.m */; };
+		E7F0ABE91AC7DE4A004F8581 /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0ABE81AC7DE4A004F8581 /* MainScene.m */; };
+		E7F0ABEC1AC7DEF5004F8581 /* WinDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0ABEB1AC7DEF5004F8581 /* WinDialog.m */; };
+		E7F0ABEF1AC7E26E004F8581 /* Level2.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0ABEE1AC7E26E004F8581 /* Level2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,8 +196,8 @@
 		B737896E180762440076A88C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Source/Resources/Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		B73789851807631A0076A88C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/Platforms/iOS/main.m; sourceTree = SOURCE_ROOT; };
 		B73789861807631A0076A88C /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Source/Prefix.pch; sourceTree = SOURCE_ROOT; };
-		B7378992180767190076A88C /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScene.h; path = Source/MainScene.h; sourceTree = "<group>"; };
-		B7378993180767190076A88C /* MainScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScene.m; path = Source/MainScene.m; sourceTree = "<group>"; };
+		B7378992180767190076A88C /* Level1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level1.h; path = Source/Level1.h; sourceTree = "<group>"; };
+		B7378993180767190076A88C /* Level1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level1.m; path = Source/Level1.m; sourceTree = "<group>"; };
 		B77F1B2E17B978D7009739AE /* Platformer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Platformer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77F1B3117B978D7009739AE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B77F1B3317B978D7009739AE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -225,6 +228,12 @@
 		E7E80DBA1AC61E940061BF1C /* LoseDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoseDialog.m; sourceTree = "<group>"; };
 		E7F0ABE11AC7B55C004F8581 /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
 		E7F0ABE21AC7B55C004F8581 /* GameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameManager.m; sourceTree = "<group>"; };
+		E7F0ABE71AC7DE4A004F8581 /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScene.h; sourceTree = "<group>"; };
+		E7F0ABE81AC7DE4A004F8581 /* MainScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScene.m; sourceTree = "<group>"; };
+		E7F0ABEA1AC7DEF5004F8581 /* WinDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinDialog.h; sourceTree = "<group>"; };
+		E7F0ABEB1AC7DEF5004F8581 /* WinDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinDialog.m; sourceTree = "<group>"; };
+		E7F0ABED1AC7E26E004F8581 /* Level2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level2.h; sourceTree = "<group>"; };
+		E7F0ABEE1AC7E26E004F8581 /* Level2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -449,12 +458,18 @@
 			isa = PBXGroup;
 			children = (
 				7A40362019DDEF0D007B6E8F /* Platforms */,
-				B7378992180767190076A88C /* MainScene.h */,
+				B7378992180767190076A88C /* Level1.h */,
+				B7378993180767190076A88C /* Level1.m */,
+				E7F0ABED1AC7E26E004F8581 /* Level2.h */,
+				E7F0ABEE1AC7E26E004F8581 /* Level2.m */,
+				E7F0ABE71AC7DE4A004F8581 /* MainScene.h */,
+				E7F0ABE81AC7DE4A004F8581 /* MainScene.m */,
 				E7F0ABE11AC7B55C004F8581 /* GameManager.h */,
 				E7F0ABE21AC7B55C004F8581 /* GameManager.m */,
-				B7378993180767190076A88C /* MainScene.m */,
 				E7E80DB91AC61E940061BF1C /* LoseDialog.h */,
 				E7E80DBA1AC61E940061BF1C /* LoseDialog.m */,
+				E7F0ABEA1AC7DEF5004F8581 /* WinDialog.h */,
+				E7F0ABEB1AC7DEF5004F8581 /* WinDialog.m */,
 				E7E80DB21AC616CC0061BF1C /* Key.h */,
 				E7E80DB31AC616CC0061BF1C /* Key.m */,
 				E711188F1AC204020061C6BE /* Pipe.h */,
@@ -815,7 +830,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A4036E819DE3F33007B6E8F /* MainScene.m in Sources */,
+				7A4036E819DE3F33007B6E8F /* Level1.m in Sources */,
 				7A40360419DDEE84007B6E8F /* main.m in Sources */,
 				7A59498E19E3941300F65F90 /* AppDelegate.m in Sources */,
 			);
@@ -825,7 +840,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				927F619E196C771E000F43EF /* MainScene.m in Sources */,
+				927F619E196C771E000F43EF /* Level1.m in Sources */,
 				5B121030197484FA004C1E1D /* PlatformerActivity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -838,9 +853,12 @@
 				E71118911AC204020061C6BE /* Pipe.m in Sources */,
 				E7004DD01ABE80C600492523 /* Ball.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				E7F0ABEC1AC7DEF5004F8581 /* WinDialog.m in Sources */,
 				E7E80DB41AC616CC0061BF1C /* Key.m in Sources */,
+				E7F0ABE91AC7DE4A004F8581 /* MainScene.m in Sources */,
+				E7F0ABEF1AC7E26E004F8581 /* Level2.m in Sources */,
 				E7F0ABE31AC7B55C004F8581 /* GameManager.m in Sources */,
-				7A046D8C19E8A20E004C4763 /* MainScene.m in Sources */,
+				7A046D8C19E8A20E004C4763 /* Level1.m in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

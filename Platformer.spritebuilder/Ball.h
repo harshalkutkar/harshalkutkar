@@ -8,6 +8,6 @@
 
 #import "CCSprite.h"
 
-@interface Ball : CCSprite<CCPhysicsCollisionDelegate>
+@interface Ball : CCSprite
 
 @end

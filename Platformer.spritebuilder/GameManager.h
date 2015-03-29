@@ -21,7 +21,7 @@
 - (int) getCurrentLevel;
 - (void) setCurrentLevel : (int) level;
 -(BOOL) checkIfPlayerHasRequiredKeysForLevel;
-
+-(void) incrementLevel;
 
 
 @end

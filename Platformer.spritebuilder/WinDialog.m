@@ -1,19 +1,21 @@
 //
-//  LoseDialog.m
+//  WinDialog.m
 //  Platformer
 //
-//  Created by Harsh Alkutkar on 3/27/15.
+//  Created by Harsh Alkutkar on 3/29/15.
 //  Copyright (c) 2015 Apportable. All rights reserved.
 //
 
-#import "LoseDialog.h"
+#import "WinDialog.h"
 #import "GameManager.h"
 
-@implementation LoseDialog
+@implementation WinDialog
 
--(void) restart
+- (void) next
 {
-    //Get the current
+    //Increment Level
+    [[GameManager sharedGameManager] incrementLevel];
+    //Get the next number
     int current = [[GameManager sharedGameManager] getCurrentLevel];
     //Construct Name
     NSString *myString = @"Level";
@@ -21,7 +23,7 @@
     //Now Load CCB
     CCScene *scene =  [CCBReader loadAsScene:levelToLoad];
     [[CCDirector sharedDirector] replaceScene: scene withTransition: [CCTransition transitionCrossFadeWithDuration: 0.5]];
-
+    
 }
 
 @end

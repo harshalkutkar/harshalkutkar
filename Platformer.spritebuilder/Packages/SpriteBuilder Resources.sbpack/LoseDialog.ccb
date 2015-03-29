@@ -109,7 +109,7 @@
 						<string>Text</string>
 						<key>value</key>
 						<array>
-							<string>You lost!</string>
+							<string>You Lost!</string>
 							<false/>
 						</array>
 					</dict>
@@ -254,7 +254,7 @@
 				<key>children</key>
 				<array/>
 				<key>customClass</key>
-				<string>LoseDialog</string>
+				<string></string>
 				<key>displayName</key>
 				<string>CCButton</string>
 				<key>memberVarAssignmentName</key>
@@ -576,7 +576,7 @@
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string></string>
+		<string>LoseDialog</string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>

@@ -54,7 +54,6 @@
     CMAccelerometerData *accelerometerData = _motionManager.accelerometerData;
     CMAcceleration acceleration = accelerometerData.acceleration;
     
-    CGSize s = [CCDirector sharedDirector].viewSize;
     
     /*
      CGFloat newXPosition = _ball.position.x + acceleration.y * 1000 * delta;
@@ -81,10 +80,28 @@
     
     //print out ball position
     //NSLog(@"Ball Pos %f %f",self.position.x,self.position.y);
-    
+    [self boundsCheck];
     
 }
 
+
+
+-(void) boundsCheck
+{
+    
+    
+    CGSize s = [CCDirector sharedDirector].viewSize;
+
+     if (abs(self.position.y) > s.height)
+    {
+        CCScene *scene =  [CCBReader loadAsScene:@"LoseDialog"];
+        [[CCDirector sharedDirector] replaceScene: scene withTransition: [CCTransition transitionCrossFadeWithDuration: 0.5]];
+    }
+    
+    
+    
+    
+}
 
 
 

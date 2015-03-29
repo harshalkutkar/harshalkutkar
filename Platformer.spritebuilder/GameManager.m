@@ -62,8 +62,11 @@ static GameManager* _sharedMySingleton = nil;
     //initialize mutable dict
     keyRequirement =  [[NSMutableDictionary alloc] init];
    
-    //level 0 needs one key
-    [keyRequirement setObject:[NSNumber numberWithInt:0] forKey:[NSNumber numberWithInt:1]];
+    //level 1 needs one key [KEY-LEVEL PAIRS!!!]
+    [keyRequirement setObject:[NSNumber numberWithInt:1] forKey:[NSNumber numberWithInt:1]];
+    
+    //level 2 needs one key [KEY-LEVEL PAIRS!!!]
+    [keyRequirement setObject:[NSNumber numberWithInt:1] forKey:[NSNumber numberWithInt:2]];
      
     
     
@@ -112,7 +115,9 @@ static GameManager* _sharedMySingleton = nil;
 
 -(BOOL) checkIfPlayerHasRequiredKeysForLevel
 {
+   
     int required = [self getRequiredKeysForLevel:currentLevel];
+     NSLog(@"Checking ig player has keys: Keys %d Required %d Level %d",keys,required,currentLevel);
     if (keys < required)
     {
         return FALSE;
@@ -136,6 +141,14 @@ static GameManager* _sharedMySingleton = nil;
     currentLevel = level;
 }
 
+/*
+ * Increment Level
+ */
+
+-(void) incrementLevel
+{
+    currentLevel = currentLevel+1;
+}
 
 
     
