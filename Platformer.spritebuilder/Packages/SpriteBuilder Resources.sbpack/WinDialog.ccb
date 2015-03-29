@@ -109,7 +109,7 @@
 						<string>Text</string>
 						<key>value</key>
 						<array>
-							<string>You lost!</string>
+							<string>You Won!</string>
 							<false/>
 						</array>
 					</dict>
@@ -254,7 +254,7 @@
 				<key>children</key>
 				<array/>
 				<key>customClass</key>
-				<string>LoseDialog</string>
+				<string></string>
 				<key>displayName</key>
 				<string>CCButton</string>
 				<key>memberVarAssignmentName</key>
@@ -316,7 +316,7 @@
 						<string>Block</string>
 						<key>value</key>
 						<array>
-							<string>restart</string>
+							<string></string>
 							<integer>1</integer>
 						</array>
 					</dict>
@@ -361,7 +361,7 @@
 						<string>String</string>
 						<key>value</key>
 						<array>
-							<string>Restart</string>
+							<string>Next</string>
 							<false/>
 						</array>
 					</dict>
@@ -571,8 +571,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

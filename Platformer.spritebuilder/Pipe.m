@@ -15,7 +15,7 @@
     NSLog(@"Pipe Instantiated");
     
     //setting up the physics body
-    self.physicsBody.collisionType = @"redpipe";
+    self.physicsBody.collisionType = @"pipe";
 }
 
 @end

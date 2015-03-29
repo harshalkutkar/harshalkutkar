@@ -2,21 +2,25 @@
 #import <CoreMotion/CoreMotion.h>
 #import "Pipe.h"
 #import "Ball.h"
+#import "Key.h"
+#import "GameManager.h"
 #import "CCPhysics+ObjectiveChipmunk.h"
 
 
 @implementation MainScene
 {
     Ball *_ball;
-    CCNode *_physicsNode;
+    CCPhysicsNode *_physicsNode;
     CCSprite *_rotatingBlock;
     CCNode *_contentNode;
+    
     
 }
 
 - (id)init {
     if (self = [super init])
     {
+        
     }
     
     return self;
@@ -24,12 +28,14 @@
 
 
 - (void)didLoadFromCCB {
+   
     
+    _physicsNode.collisionDelegate = self;
     
     _ball = (Ball*) [CCBReader load:@"Ball"];
     _ball.position = ccp(162,558);
     [_physicsNode addChild:_ball];
-    
+
    
     
     
@@ -78,9 +84,38 @@
     
 }
 
--(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair pipe:(CCNode *)nodeA ball:(CCNode *)nodeB {
-    NSLog(@"Collision ");
+ - (BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair ball:(CCNode *)nodeA pipe:(CCNode *)nodeB
+{
+    NSLog(@"Ball and Pipe Collided");
+    
+    //Check if the required number of keys was set.
+    BOOL hasKeys = [[GameManager sharedGameManager] checkIfPlayerHasRequiredKeysForLevel];
+    
+    if (hasKeys)
+    {
+        //Enable the Pipe
+        
+        //Show the Win Dialog
+        CCScene *scene =  [CCBReader loadAsScene:@"WinDialog"];
+        [[CCDirector sharedDirector] replaceScene: scene withTransition: [CCTransition transitionCrossFadeWithDuration: 0.5]];
+        
+    }
+    
+    return YES;
 }
+
+- (BOOL)ccPhysicsCollisionPreSolve:(CCPhysicsCollisionPair *)pair ball:(CCNode *)nodeA key:(Key *)nodeB
+{
+    NSLog(@"Ball and Key Collided");
+    //Add a Key (From the Singleton)
+    [[GameManager sharedGameManager] addKey];
+    
+    //Remove the key
+    [nodeB removeFromParentAndCleanup:true];
+    
+    return YES;
+}
+
 
 
 
