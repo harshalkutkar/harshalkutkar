@@ -457,11 +457,8 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E700324D1ACA0E9300E7F5FE /* Levels */,
 				7A40362019DDEF0D007B6E8F /* Platforms */,
-				B7378992180767190076A88C /* Level1.h */,
-				B7378993180767190076A88C /* Level1.m */,
-				E7F0ABED1AC7E26E004F8581 /* Level2.h */,
-				E7F0ABEE1AC7E26E004F8581 /* Level2.m */,
 				E7F0ABE71AC7DE4A004F8581 /* MainScene.h */,
 				E7F0ABE81AC7DE4A004F8581 /* MainScene.m */,
 				E7F0ABE11AC7B55C004F8581 /* GameManager.h */,
@@ -576,6 +573,17 @@
 				B73789861807631A0076A88C /* Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E700324D1ACA0E9300E7F5FE /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				B7378992180767190076A88C /* Level1.h */,
+				B7378993180767190076A88C /* Level1.m */,
+				E7F0ABED1AC7E26E004F8581 /* Level2.h */,
+				E7F0ABEE1AC7E26E004F8581 /* Level2.m */,
+			);
+			name = Levels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

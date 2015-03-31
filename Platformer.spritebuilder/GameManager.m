@@ -40,15 +40,11 @@ static GameManager* _sharedMySingleton = nil;
 }
 
 -(id)init {
+    NSLog (@"INIT CALLED");
+    
     self = [super init];
     if (self != nil) {
         // initialize stuff here
-        
-        //initially no collected keys
-        keys = 0;
-        
-        //initialize level
-        currentLevel = 0;
         
         [self initRequirementDict];
         
@@ -65,8 +61,8 @@ static GameManager* _sharedMySingleton = nil;
     //level 1 needs one key [KEY-LEVEL PAIRS!!!]
     [keyRequirement setObject:[NSNumber numberWithInt:1] forKey:[NSNumber numberWithInt:1]];
     
-    //level 2 needs one key [KEY-LEVEL PAIRS!!!]
-    [keyRequirement setObject:[NSNumber numberWithInt:1] forKey:[NSNumber numberWithInt:2]];
+    //level 2 needs two keys [KEY-LEVEL PAIRS!!!]
+    [keyRequirement setObject:[NSNumber numberWithInt:2] forKey:[NSNumber numberWithInt:2]];
      
     
     
@@ -131,6 +127,7 @@ static GameManager* _sharedMySingleton = nil;
 - (int) getCurrentLevel
 {
     return currentLevel;
+    
 }
 
 /*
@@ -139,6 +136,7 @@ static GameManager* _sharedMySingleton = nil;
 - (void) setCurrentLevel : (int) level
 {
     currentLevel = level;
+    NSLog (@"Current Level is now %d",currentLevel);
 }
 
 /*
@@ -148,6 +146,7 @@ static GameManager* _sharedMySingleton = nil;
 -(void) incrementLevel
 {
     currentLevel = currentLevel+1;
+    NSLog (@"Incremented Level to now %d",currentLevel);
 }
 
 

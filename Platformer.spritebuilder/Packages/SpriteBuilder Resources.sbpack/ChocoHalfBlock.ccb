@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>4</integer>
+	<integer>2</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -41,15 +41,15 @@
 		<array>
 			<dict>
 				<key>UUID</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>baseClass</key>
 				<string>CCSprite</string>
 				<key>children</key>
 				<array/>
 				<key>customClass</key>
-				<string>Ball</string>
+				<string></string>
 				<key>displayName</key>
-				<string>Donut-1@4x</string>
+				<string>chocoHalf@4x</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -61,32 +61,71 @@
 					<key>allowsRotation</key>
 					<true/>
 					<key>bodyShape</key>
-					<integer>1</integer>
+					<integer>0</integer>
 					<key>collisionCategories</key>
 					<array/>
 					<key>collisionMask</key>
 					<array/>
 					<key>collisionType</key>
-					<string>ball</string>
+					<string></string>
 					<key>cornerRadius</key>
-					<real>65</real>
+					<real>0.0</real>
 					<key>density</key>
 					<real>1</real>
 					<key>dynamic</key>
-					<true/>
+					<false/>
 					<key>elasticity</key>
-					<real>0.25</real>
+					<real>0.30000001192092896</real>
 					<key>friction</key>
 					<real>0.30000001192092896</real>
 					<key>points</key>
 					<array>
 						<array>
-							<real>65</real>
-							<real>64.5</real>
+							<real>0.97919762134552002</real>
+							<real>14.25069522857666</real>
+						</array>
+						<array>
+							<real>0.0</real>
+							<real>35</real>
+						</array>
+						<array>
+							<real>35</real>
+							<real>35</real>
+						</array>
+						<array>
+							<real>34.905567169189453</real>
+							<real>14.478353500366211</real>
+						</array>
+						<array>
+							<real>18.23046875</real>
+							<real>13.6015625</real>
 						</array>
 					</array>
 					<key>polygons</key>
-					<array/>
+					<array>
+						<array>
+							<array>
+								<real>18.23046875</real>
+								<real>13.6015625</real>
+							</array>
+							<array>
+								<real>34.905567169189453</real>
+								<real>14.478353500366211</real>
+							</array>
+							<array>
+								<real>35</real>
+								<real>35</real>
+							</array>
+							<array>
+								<real>0.0</real>
+								<real>35</real>
+							</array>
+							<array>
+								<real>0.97919762134552002</real>
+								<real>14.25069522857666</real>
+							</array>
+						</array>
+					</array>
 				</dict>
 				<key>properties</key>
 				<array>
@@ -119,8 +158,8 @@
 						<string>Point</string>
 						<key>value</key>
 						<array>
-							<real>0.5</real>
-							<real>0.5</real>
+							<real>0.50089287757873535</real>
+							<real>0.67444151639938354</real>
 						</array>
 					</dict>
 					<dict>
@@ -130,8 +169,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>0.23599936068058014</real>
-							<real>0.23599936068058014</real>
+							<real>1</real>
+							<real>1</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -144,7 +183,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Assets/Donut-1@4x.png</string>
+							<string>Assets/chocoHalf@4x.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -224,7 +263,7 @@
 				<key>value</key>
 				<array>
 					<real>0.5</real>
-					<real>0.5</real>
+					<real>0.75</real>
 				</array>
 			</dict>
 			<dict>
@@ -343,7 +382,7 @@
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
-			<real>85.342697143554688</real>
+			<real>128</real>
 			<key>sequenceId</key>
 			<integer>0</integer>
 			<key>soundChannel</key>

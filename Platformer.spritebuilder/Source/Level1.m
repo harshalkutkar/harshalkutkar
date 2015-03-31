@@ -93,6 +93,13 @@
         [[CCDirector sharedDirector] replaceScene: scene withTransition: [CCTransition transitionCrossFadeWithDuration: 0.5]];
         
     }
+    else
+    {
+        //Show the Lose Dialog
+        CCScene *scene =  [CCBReader loadAsScene:@"LoseDialog"];
+        [[CCDirector sharedDirector] replaceScene: scene withTransition: [CCTransition transitionCrossFadeWithDuration: 0.5]];
+
+    }
     
     return YES;
 }

@@ -93,7 +93,23 @@
         [[CCDirector sharedDirector] replaceScene: scene withTransition: [CCTransition transitionCrossFadeWithDuration: 0.5]];
         
     }
+    else
+    {
+        //Show the Lose Dialog
+        CCScene *scene =  [CCBReader loadAsScene:@"LoseDialog"];
+        [[CCDirector sharedDirector] replaceScene: scene withTransition: [CCTransition transitionCrossFadeWithDuration: 0.5]];
+        
+    }
+
     
+    return YES;
+}
+
+//Birthday Cake Bounce
+- (BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair ball:(CCNode *)nodeA bCake:(CCNode *)nodeB
+{
+    NSLog(@"Ball collided with bcake");
+    [nodeA.physicsBody applyImpulse:ccp(0, 3500.f)];
     return YES;
 }
 
