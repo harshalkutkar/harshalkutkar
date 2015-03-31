@@ -30,11 +30,13 @@
 
 - (void)didLoadFromCCB {
     
-    //update
-    [self updateHUD];
+    
     
     //set keys
     [[GameManager sharedGameManager] setKeys:0];
+    
+    //update [has to come after set!]
+    [self updateHUD];
     
    
     //Make sure we get the callback after a collision.

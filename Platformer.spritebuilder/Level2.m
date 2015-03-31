@@ -32,11 +32,13 @@
 
 - (void)didLoadFromCCB {
     
-    //update
-    [self updateHUD];
+   
     
     //set keys
     [[GameManager sharedGameManager] setKeys:0];
+    
+    //update
+    [self updateHUD];
     
     //Make sure we get the callback after a collision.
     _physicsNode.collisionDelegate = self;
@@ -49,9 +51,6 @@
     //Add it to the physics node.
     [_physicsNode addChild:_ball];
     
-    
-    //Set the Number of Keys collected to zero:
-    [[GameManager sharedGameManager] setKeys:0];
     
     //Set the current level to one.
     [[GameManager sharedGameManager] setCurrentLevel:currentLevel];

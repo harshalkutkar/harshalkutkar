@@ -98,6 +98,7 @@ static GameManager* _sharedMySingleton = nil;
 -(void) setKeys: (int) x
 {
     keys = x;
+    NSLog (@"Setting Keys to %d | %d",x,keys);
 }
 
 /*
