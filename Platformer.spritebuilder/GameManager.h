@@ -11,9 +11,7 @@
 @interface GameManager : NSObject
 
 + (GameManager *) sharedGameManager;
-
 - (void) sayHello;
-
 - (void) addKey;
 - (int) getKeys;
 - (void) setKeys: (int) x;

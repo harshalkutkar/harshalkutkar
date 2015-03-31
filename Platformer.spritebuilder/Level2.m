@@ -13,14 +13,17 @@
     CCPhysicsNode *_physicsNode;
     CCSprite *_rotatingBlock;
     CCNode *_contentNode;
-    
+    CCLabelTTF *_score;
+    int currentLevel;
     
 }
 
 - (id)init {
     if (self = [super init])
     {
-        
+            //init level
+        currentLevel = 2;
+       
     }
     
     return self;
@@ -28,6 +31,12 @@
 
 
 - (void)didLoadFromCCB {
+    
+    //update
+    [self updateHUD];
+    
+    //set keys
+    [[GameManager sharedGameManager] setKeys:0];
     
     //Make sure we get the callback after a collision.
     _physicsNode.collisionDelegate = self;
@@ -45,7 +54,7 @@
     [[GameManager sharedGameManager] setKeys:0];
     
     //Set the current level to one.
-    [[GameManager sharedGameManager] setCurrentLevel:2];
+    [[GameManager sharedGameManager] setCurrentLevel:currentLevel];
     
     //Set the camera to follow the ball (might need it later)
     CCActionFollow *follow = [CCActionFollow actionWithTarget:_ball worldBoundary:self.boundingBox];
@@ -101,7 +110,7 @@
         
     }
 
-    
+    [self updateHUD];
     return YES;
 }
 
@@ -118,13 +127,24 @@
     NSLog(@"Ball and Key Collided");
     //Add a Key (From the Singleton)
     [[GameManager sharedGameManager] addKey];
-    
     //Remove the key
     [nodeB removeFromParentAndCleanup:true];
-    
+    [self updateHUD];
     return YES;
 }
 
+
+/*
+ * Updates the HUD. Has to be called manually.
+ *
+ */
+- (void) updateHUD
+{
+    int requiredKeys = [[GameManager sharedGameManager] getRequiredKeysForLevel:currentLevel];
+    int currentKeys = [[GameManager sharedGameManager] getKeys];
+    NSString *scoreString =  [NSString stringWithFormat:@"%d/%d",currentKeys,requiredKeys];
+    [_score setString:scoreString];
+}
 
 
 
