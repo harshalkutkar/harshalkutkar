@@ -1,68 +1,57 @@
-# harshalkutkar
-Game made for Mobile Game Dev Class
+----------
+Donut Rush
 
-Game Design Document
+----------
+
+Game	Description
+===================
+
+
+This is a physics based game where the main character or object is controlled by an accelerometer and has to go from a starting point to the ending point through a series of such mini-games.
+
+Author
+----------
 Harsh Alkutkar
-Objective
-The objective of the game is to stop the enemy characters from reaching your treasure by placing objects that destroy the enemy characters in front of it.
-Gameplay Mechanics
-This game mainly plays on the mini-game – progression map based
-The mini-game consists of the player can select various objects, place them on the grid in front of the enemy (Grid Based). After each successful mini-game the user would unlock certain achievements and would advance in the progression map.
-Level Design
-Levels should be focused around the objective but by tweaking the game mechanic by increasing the difficulty level gradually and allowing different power ups at different levels.
-Levels designed may tweak the following for anyone to distinguish them.
--	Time Limit to Finish
--	Movement Speed of enemies
--	Available Power Ups
--	Available items that can be placed.
--	Cooldown time for a certain item
--	Cost for a certain item.
-Levels should be designed such that each level is clearly distinguished from previous levels by using factors mentioned before. Navigational cues must be given, initial levels will contain tutorials to help the user play.
+
+Design	Goals
+-------------
+
+The game aims to achieve the following goals:
+1. Establish the World and familiarize players with the characters and events.
+
+2. Develop an achievements system that rewards the player with coins or content.
+
+3. Develop a fun gameplay, based on:
+a. Discovery – players discover the storyline, new levels, as well as the several achievements and prizes.
+b. Advancement – the playable characters will be able to advance in levels and face stronger challenges / levels.
+c. Power – you gain certain powers as you level up.
+
+Target	Market
+Our ideal user has the following characteristics:
+1. Male;
+2. 13 to 28 years old;
+3. Has an iPad;
+4. Likes games;
+5. Plays mobile games;
+6. Consumes many types of content on the iPad;
+7. Purchases content through apps, or online;
 
 
-Technical
-Scenes
-•	Main Menu (needs continue button to avoid level select when possible)
-•	Level Select / Progression Map.
-•	Gameplay
-Controls/Input
-o	Touch based input. Touch to place.
-Classes/CCBs
-•	Scenes
-o	Main Menu
-o	Level Select / Progression Map
-o	Gameplay
-•	Nodes/Sprites
-o	Entity (abstract superclass)
-•	Player
-•	Enemy (Different Types)
-o	WorldObject (abstract superclass)
-•	Time
-MVP Milestones
-Week 1 (2/11 - 2/18/2014)
-•	Create / Implement Sprites
-•	Implement World (Minigame)
-Week 2 (2/19 - 2/24/2014) - finishing a playable build
-•	Implement Point System
-•	Implement Enemy Approach
-o	Implement Collision Physics
-o	Implement Collision Animations
-Week 3 (2/24 - 3/3/2014)
-•	Create Levels
-•	Tweak Conditions for each level
-•	Create more enemy structures if needed.
-Week 4 (3/3 - 3/10/2014) - finishing core gameplay
-•	Incorporate Progression Map
-•	Refine levels -- playtest even more often!!
-•	Refine control scheme
-Week 5 (3/17- 3/24/2014)
-•	Testing the game holistically – progression map+game.
-•	Determine what other polish is needed
-Week 6 (3/24 - 3/31/2014) - finishing the polish
-•	Work on rewinding particle effects
-•	Integrate analytics
-•	Screenshots
-•	Write game description for App store
-•	Play around with Apportable to see if Android release is feasible
+#### <i class="icon-file"></i> Functional	Specifications	
 
+**Core	GamePlay**
+The PC (Playable Character) moves in a 2D (two dimensional) plane, exploring levels that extend from the top to the bottom of the screen. 
+The playable character is controlled by an accelerometer and will fall on or through certain types of obstacles.
 
+As the PC advances through the levels, specific actions and events will trigger achievements that are rewarded with content, which can be retrieved at any time through the achievements menu screen. 
+
+The PC’**
+Actions that the PC can perform are:
+-Move Left
+-Move Right
+- Jump
+
+Characters	/	Units
+- Walls 
+- Bouncy Walls (Apply imuplse upwards to PC)
+- Pipes (Where you go in and out)
