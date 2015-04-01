@@ -5,19 +5,25 @@ Week 1. Mar 24
 (Done.) Experiment with new game mechanics. Finalize game mechanism.  
 
 Week 2. Mar 31
-Different levels. 
-Harder types of obstacles. 
-Changing the physics. 
+(Done.) Different levels. 
+(Done.) Harder types of obstacles. 
+(In Progress.)Changing the physics. 
 
 Week 3. April 7.
-Have some power-ups. 
+More levels (3 levels.)
+More obstacles (2 differents of obstacles.)
+HUD. Head-up display. 
 
 Week 4. April 14. 
+Progression Map. 
+Have some power-ups. 
 Make a user tutorial. 
 
 Week 5. 
+Analytics. 
 Play testing. 
 Make 2 versions: with/without time constrain. 
+App store submission.
 
 Week 6.  
 Add collectables. 
@@ -25,7 +31,6 @@ Add collectables.
 
 Optional features ========
 
-Progression Map. 
 FB connection. 
 
 
