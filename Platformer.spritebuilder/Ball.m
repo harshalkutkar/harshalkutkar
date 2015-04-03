@@ -62,7 +62,7 @@
      */
     
     //acceleration in the X direction = the impulse being appplied. Works OK.
-    [self.physicsBody applyImpulse:ccp(acceleration.x*5, 0.0f )];
+    [self.physicsBody applyImpulse:ccp(acceleration.x*10, 0.0f )];
     
  
     

@@ -573,7 +573,7 @@
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string></string>
+		<string>RotatingBlock</string>
 		<key>customProperties</key>
 		<array>
 			<dict>

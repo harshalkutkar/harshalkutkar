@@ -11,17 +11,14 @@
 {
     Ball *_ball;
     CCPhysicsNode *_physicsNode;
-    CCSprite *_rotatingBlock;
+   
     CCNode *_contentNode;
     CCLabelTTF *_score;
-    int currentLevel;
 }
 
 - (id)init {
     if (self = [super init])
     {
-        currentLevel = 1;
-        
     }
     
     return self;
@@ -50,12 +47,6 @@
     //Add it to the physics node.
     [_physicsNode addChild:_ball];
 
-   
-    //Set the Number of Keys collected to zero:
-    [[GameManager sharedGameManager] setKeys:0];
-    
-    //Set the current level to one.
-    [[GameManager sharedGameManager] setCurrentLevel:currentLevel];
     
     //Set the camera to follow the ball (might need it later)
     CCActionFollow *follow = [CCActionFollow actionWithTarget:_ball worldBoundary:self.boundingBox];
@@ -66,9 +57,6 @@
     self.userInteractionEnabled = YES;
     
 
-    // if you have a rotating block variable
-    CCActionRotateBy *rot = [CCActionRotateBy actionWithDuration:1 angle:360];
-    [_rotatingBlock runAction:[CCActionRepeatForever actionWithAction:rot]];
     
  
     
@@ -136,10 +124,20 @@
  */
 - (void) updateHUD
 {
+    int currentLevel =[[GameManager sharedGameManager] getCurrentLevel];
     int requiredKeys = [[GameManager sharedGameManager] getRequiredKeysForLevel:currentLevel];
     int currentKeys = [[GameManager sharedGameManager] getKeys];
     NSString *scoreString =  [NSString stringWithFormat:@"%d/%d",currentKeys,requiredKeys];
     [_score setString:scoreString];
+}
+
+
+//Birthday Cake Bounce
+- (BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair ball:(CCNode *)nodeA bCake:(CCNode *)nodeB
+{
+    NSLog(@"Ball collided with bcake");
+    [nodeA.physicsBody applyImpulse:ccp(0, 3000.f)];
+    return YES;
 }
 
 @end

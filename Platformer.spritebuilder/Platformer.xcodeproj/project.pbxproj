@@ -98,12 +98,13 @@
 		E7004DD01ABE80C600492523 /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = E7004DCF1ABE80C600492523 /* Ball.m */; };
 		E71118911AC204020061C6BE /* Pipe.m in Sources */ = {isa = PBXBuildFile; fileRef = E71118901AC204020061C6BE /* Pipe.m */; };
 		E73A10741ABA7E8200279FF1 /* References.txt in Resources */ = {isa = PBXBuildFile; fileRef = E73A10731ABA7E8200279FF1 /* References.txt */; };
+		E73EB3AB1ACE54300048624E /* RotatingBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E73EB3AA1ACE54300048624E /* RotatingBlock.m */; };
+		E73EB3AE1ACE56F90048624E /* UpAndDownBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E73EB3AD1ACE56F90048624E /* UpAndDownBlock.m */; };
 		E7E80DB41AC616CC0061BF1C /* Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E80DB31AC616CC0061BF1C /* Key.m */; };
 		E7E80DBB1AC61E940061BF1C /* LoseDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E80DBA1AC61E940061BF1C /* LoseDialog.m */; };
 		E7F0ABE31AC7B55C004F8581 /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0ABE21AC7B55C004F8581 /* GameManager.m */; };
 		E7F0ABE91AC7DE4A004F8581 /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0ABE81AC7DE4A004F8581 /* MainScene.m */; };
 		E7F0ABEC1AC7DEF5004F8581 /* WinDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0ABEB1AC7DEF5004F8581 /* WinDialog.m */; };
-		E7F0ABEF1AC7E26E004F8581 /* Level2.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0ABEE1AC7E26E004F8581 /* Level2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -222,6 +223,10 @@
 		E711188F1AC204020061C6BE /* Pipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pipe.h; sourceTree = "<group>"; };
 		E71118901AC204020061C6BE /* Pipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pipe.m; sourceTree = "<group>"; };
 		E73A10731ABA7E8200279FF1 /* References.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = References.txt; sourceTree = "<group>"; };
+		E73EB3A91ACE54300048624E /* RotatingBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotatingBlock.h; sourceTree = "<group>"; };
+		E73EB3AA1ACE54300048624E /* RotatingBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotatingBlock.m; sourceTree = "<group>"; };
+		E73EB3AC1ACE56F90048624E /* UpAndDownBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpAndDownBlock.h; sourceTree = "<group>"; };
+		E73EB3AD1ACE56F90048624E /* UpAndDownBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpAndDownBlock.m; sourceTree = "<group>"; };
 		E7E80DB21AC616CC0061BF1C /* Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Key.h; sourceTree = "<group>"; };
 		E7E80DB31AC616CC0061BF1C /* Key.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Key.m; sourceTree = "<group>"; };
 		E7E80DB91AC61E940061BF1C /* LoseDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoseDialog.h; sourceTree = "<group>"; };
@@ -232,8 +237,6 @@
 		E7F0ABE81AC7DE4A004F8581 /* MainScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScene.m; sourceTree = "<group>"; };
 		E7F0ABEA1AC7DEF5004F8581 /* WinDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinDialog.h; sourceTree = "<group>"; };
 		E7F0ABEB1AC7DEF5004F8581 /* WinDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinDialog.m; sourceTree = "<group>"; };
-		E7F0ABED1AC7E26E004F8581 /* Level2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level2.h; sourceTree = "<group>"; };
-		E7F0ABEE1AC7E26E004F8581 /* Level2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -462,6 +465,10 @@
 				E7F0ABE71AC7DE4A004F8581 /* MainScene.h */,
 				E7F0ABE81AC7DE4A004F8581 /* MainScene.m */,
 				E7F0ABE11AC7B55C004F8581 /* GameManager.h */,
+				E73EB3AC1ACE56F90048624E /* UpAndDownBlock.h */,
+				E73EB3AD1ACE56F90048624E /* UpAndDownBlock.m */,
+				E73EB3A91ACE54300048624E /* RotatingBlock.h */,
+				E73EB3AA1ACE54300048624E /* RotatingBlock.m */,
 				E7F0ABE21AC7B55C004F8581 /* GameManager.m */,
 				E7E80DB91AC61E940061BF1C /* LoseDialog.h */,
 				E7E80DBA1AC61E940061BF1C /* LoseDialog.m */,
@@ -580,8 +587,6 @@
 			children = (
 				B7378992180767190076A88C /* Level1.h */,
 				B7378993180767190076A88C /* Level1.m */,
-				E7F0ABED1AC7E26E004F8581 /* Level2.h */,
-				E7F0ABEE1AC7E26E004F8581 /* Level2.m */,
 			);
 			name = Levels;
 			sourceTree = "<group>";
@@ -863,8 +868,9 @@
 				B73789871807631A0076A88C /* main.m in Sources */,
 				E7F0ABEC1AC7DEF5004F8581 /* WinDialog.m in Sources */,
 				E7E80DB41AC616CC0061BF1C /* Key.m in Sources */,
+				E73EB3AE1ACE56F90048624E /* UpAndDownBlock.m in Sources */,
+				E73EB3AB1ACE54300048624E /* RotatingBlock.m in Sources */,
 				E7F0ABE91AC7DE4A004F8581 /* MainScene.m in Sources */,
-				E7F0ABEF1AC7E26E004F8581 /* Level2.m in Sources */,
 				E7F0ABE31AC7B55C004F8581 /* GameManager.m in Sources */,
 				7A046D8C19E8A20E004C4763 /* Level1.m in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
