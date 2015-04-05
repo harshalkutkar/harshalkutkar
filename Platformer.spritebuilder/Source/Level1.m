@@ -11,7 +11,7 @@
 {
     Ball *_ball;
     CCPhysicsNode *_physicsNode;
-   
+    CCNode *_ballNode;
     CCNode *_contentNode;
     CCLabelTTF *_score;
 }
@@ -102,6 +102,30 @@
      [self updateHUD];
     
     return YES;
+}
+
+
+- (BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair ball:(Ball *)nodeA portal:(Portal *)nodeB
+{
+    CGPoint destination = [[GameManager sharedGameManager] getLocationOfPortal:[nodeB getConnectedPortalId]];
+    
+    [nodeA setPositionType:CCPositionTypePoints];
+     if (destination.x+30 > 568)
+     {
+         destination.y = destination.y + 30;
+     }
+     else
+     {
+         destination.x += 30;
+     }
+    [nodeA setPositionInPoints:destination];
+    
+   
+    NSLog(@"Destination: %f ,%f",destination.x+50, destination.y);
+   
+    
+    return YES;
+    
 }
 
 - (BOOL)ccPhysicsCollisionPreSolve:(CCPhysicsCollisionPair *)pair ball:(CCNode *)nodeA key:(Key *)nodeB

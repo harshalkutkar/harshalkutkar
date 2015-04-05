@@ -15,4 +15,10 @@
     CCScene *scene =  [CCBReader loadAsScene:@"Level1"];
     [[CCDirector sharedDirector] replaceScene: scene withTransition: [CCTransition transitionCrossFadeWithDuration: 0.5]];
 }
+
+- (void) level
+{
+    CCScene *scene =  [CCBReader loadAsScene:@"ProgressionMap"];
+    [[CCDirector sharedDirector] replaceScene: scene withTransition: [CCTransition transitionCrossFadeWithDuration: 0.5]];
+}
 @end

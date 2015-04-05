@@ -29,6 +29,7 @@
     
     //setting up the physics body
     self.physicsBody.collisionType = @"ball";
+    
 }
 
 #pragma Accelerometer
@@ -79,7 +80,8 @@
     
     
     //print out ball position
-    //NSLog(@"Ball Pos %f %f",self.position.x,self.position.y);
+    CGPoint s = [self convertToWorldSpace: self.position];
+    NSLog(@"Ball Pos %f %f",s.x,s.y);
     [self boundsCheck];
     
 }

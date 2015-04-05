@@ -180,7 +180,7 @@
 									<key>value</key>
 									<array>
 										<real>0.0</real>
-										<real>1</real>
+										<real>0.0</real>
 									</array>
 								</dict>
 							</array>
@@ -633,6 +633,19 @@
 						<array/>
 						<key>customClass</key>
 						<string></string>
+						<key>customProperties</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>duration</string>
+								<key>optimized</key>
+								<false/>
+								<key>type</key>
+								<integer>0</integer>
+								<key>value</key>
+								<string>2</string>
+							</dict>
+						</array>
 						<key>displayName</key>
 						<string>HalfBlock</string>
 						<key>memberVarAssignmentName</key>
@@ -685,8 +698,6 @@
 								<string>ChocoFullBlock.ccb</string>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -1131,6 +1142,19 @@
 						<array/>
 						<key>customClass</key>
 						<string></string>
+						<key>customProperties</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>duration</string>
+								<key>optimized</key>
+								<false/>
+								<key>type</key>
+								<integer>0</integer>
+								<key>value</key>
+								<string>2</string>
+							</dict>
+						</array>
 						<key>displayName</key>
 						<string>HalfBlock</string>
 						<key>memberVarAssignmentName</key>
@@ -2017,7 +2041,7 @@
 						<key>baseValue</key>
 						<array>
 							<real>0.0</real>
-							<real>1</real>
+							<real>0.0</real>
 						</array>
 						<key>name</key>
 						<string>position</string>
@@ -2026,8 +2050,8 @@
 						<key>value</key>
 						<array>
 							<real>0.0</real>
-							<real>1</real>
-							<integer>1</integer>
+							<real>0.0</real>
+							<integer>0</integer>
 							<integer>2</integer>
 							<integer>2</integer>
 						</array>
@@ -2089,6 +2113,8 @@
 						<real>0.5</real>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 				<key>seqExpanded</key>
 				<true/>
 			</dict>
@@ -2255,8 +2281,8 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>0.16504347324371338</real>
-									<real>0.16902850568294525</real>
+									<real>0.24991191923618317</real>
+									<real>0.24991191923618317</real>
 									<false/>
 									<integer>0</integer>
 								</array>
@@ -2269,7 +2295,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>Assets/key-icon.png</string>
+									<string>Assets/candy-orange-icon.png</string>
 								</array>
 							</dict>
 							<dict>

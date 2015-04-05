@@ -8,11 +8,14 @@
 
 #import "GameManager.h"
 
+
 @implementation GameManager
 {
     int keys;
     int currentLevel;
     NSMutableDictionary *keyRequirement;
+    NSMutableArray *portalArray;
+ 
 }
 
 static GameManager* _sharedMySingleton = nil;
@@ -58,6 +61,9 @@ static GameManager* _sharedMySingleton = nil;
 {
     //initialize mutable dict
     keyRequirement =  [[NSMutableDictionary alloc] init];
+    
+    //initialize mutable dict for portals
+    portalArray =  [[NSMutableArray alloc] init];
    
     //level 1 needs one key [KEY-LEVEL PAIRS!!!]
     [keyRequirement setObject:[NSNumber numberWithInt:1] forKey:[NSNumber numberWithInt:1]];
@@ -154,6 +160,38 @@ static GameManager* _sharedMySingleton = nil;
     NSLog (@"Incremented Level to now %d",currentLevel);
 }
 
+/*
+ *  Removes all the portals in the array.
+ */
+- (void) clearPortals
+{
+    [portalArray removeAllObjects];
+}
+/*
+ *  This function registers a portal within a level.
+ */
+-(void) addPortal : (Portal*) p
+{
+    [portalArray addObject:p];
+    NSLog(@"Portal Added To Array, id = %d",[p getPortalId]);
+}
+/*
+ *
+ */
+- (CGPoint) getLocationOfPortal : (int) portalId
+{
+    for (Portal *portal in portalArray)
+    {
+         if ([portal getPortalId] == portalId)
+         {
+             //match found.
+             NSLog(@"Portal Found %d",portalId);
+             return [portal returnLocation];
+         }
+    }
+    NSLog (@"No such portal found");
+    return ccp(0.0f,0.0f);
+}
 
-    
+
 @end

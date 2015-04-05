@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Portal.h"
 
 @interface GameManager : NSObject
 
@@ -20,6 +21,7 @@
 - (void) setCurrentLevel : (int) level;
 -(BOOL) checkIfPlayerHasRequiredKeysForLevel;
 -(void) incrementLevel;
-
-
+-(void) addPortal : (Portal*) p;
+- (void) clearPortals;
+- (CGPoint) getLocationOfPortal : (int) portalId;
 @end
