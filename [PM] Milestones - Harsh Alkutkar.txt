@@ -10,22 +10,23 @@ Week 2. Mar 31
 (In Progress.)Changing the physics. 
 
 Week 3. April 7.
-More levels (3 levels.)
-More obstacles (2 differents of obstacles.)
-HUD. Head-up display. 
+(Done.) More levels (3 levels.)
+(Done.) More obstacles (2 differents of obstacles.)
+(Done.) Progression Map. 
 
 Week 4. April 14. 
-Progression Map. 
-Have some power-ups. 
-Make a user tutorial. 
+More levels (6 levels) and playtesting and finilize the difficluty of levels. 
+HUD. Head-up display. 
 
 Week 5. 
-Analytics. 
-Play testing. 
+Have some power-ups. 
+Make a user tutorial. 
 Make 2 versions: with/without time constrain. 
 App store submission.
 
 Week 6.  
+Analytics. 
+Polishing on Progression Map.
 Add collectables. 
 
 
