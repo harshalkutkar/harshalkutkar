@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>2007</integer>
+	<integer>2099</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -313,6 +313,16 @@
 								<key>value</key>
 								<string>1</string>
 							</dict>
+							<dict>
+								<key>name</key>
+								<string>portalAngle</string>
+								<key>optimized</key>
+								<false/>
+								<key>type</key>
+								<integer>0</integer>
+								<key>value</key>
+								<string>0</string>
+							</dict>
 						</array>
 						<key>displayName</key>
 						<string>Portal 0</string>
@@ -366,8 +376,6 @@
 								<string>Portal.ccb</string>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -400,6 +408,16 @@
 								<key>value</key>
 								<string>0</string>
 							</dict>
+							<dict>
+								<key>name</key>
+								<string>portalAngle</string>
+								<key>optimized</key>
+								<false/>
+								<key>type</key>
+								<integer>0</integer>
+								<key>value</key>
+								<string>-270</string>
+							</dict>
 						</array>
 						<key>displayName</key>
 						<string>Portal 1</string>
@@ -425,7 +443,7 @@
 								<key>value</key>
 								<array>
 									<real>245.75630187988281</real>
-									<real>415.4586181640625</real>
+									<real>408.90765380859375</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -2471,7 +2489,7 @@
 						<key>value</key>
 						<array>
 							<real>0.0</real>
-							<real>-100</real>
+							<real>-200</real>
 						</array>
 					</dict>
 					<dict>
@@ -2483,6 +2501,8 @@
 						<real>0.5</real>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 				<key>seqExpanded</key>
 				<true/>
 			</dict>

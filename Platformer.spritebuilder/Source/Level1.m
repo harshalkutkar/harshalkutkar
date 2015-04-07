@@ -110,14 +110,22 @@
     CGPoint destination = [[GameManager sharedGameManager] getLocationOfPortal:[nodeB getConnectedPortalId]];
     
     [nodeA setPositionType:CCPositionTypePoints];
-     if (destination.x+30 > 568)
+    int angle = [[GameManager sharedGameManager] getAngleOfPortal:[nodeB getConnectedPortalId]];
+    
+    
+    NSLog(@"Angle: %d ",angle);
+     if (angle == -270 )
      {
-         destination.y = destination.y + 30;
+         destination.y = destination.y - 50;
      }
-     else
-     {
-         destination.x += 30;
-     }
+    
+    if (angle == 0)
+    {
+        destination.x = destination.x + 50;
+        [nodeA.physicsBody applyImpulse:(ccp(400.0f,0))];
+        
+    }
+    
     [nodeA setPositionInPoints:destination];
     
    

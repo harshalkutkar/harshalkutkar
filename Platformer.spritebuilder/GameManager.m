@@ -193,5 +193,22 @@ static GameManager* _sharedMySingleton = nil;
     return ccp(0.0f,0.0f);
 }
 
+//Probably could be combined with the above (//todo)
+
+- (int) getAngleOfPortal : (int) portalId
+{
+    for (Portal *portal in portalArray)
+    {
+        if ([portal getPortalId] == portalId)
+        {
+            //match found.
+            NSLog(@"Portal Found %d",portalId);
+            return [portal getAngleOfPortal];
+        }
+    }
+    NSLog (@"No such portal found");
+    return 0;
+}
+
 
 @end

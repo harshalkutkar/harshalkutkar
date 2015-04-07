@@ -12,7 +12,12 @@
 //id of the portal.
 @property (nonatomic,assign) int portalId;
 @property (nonatomic,assign) int connectedPortalId;
+@property (nonatomic,assign) int portalAngle;
+
 - (CGPoint) returnLocation;
 -(int) getConnectedPortalId;
 -(int) getPortalId;
+-(int) getAngleOfPortal;
+-(void) setPortalAngle:(int)p;
+
 @end

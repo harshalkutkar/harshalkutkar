@@ -24,4 +24,6 @@
 -(void) addPortal : (Portal*) p;
 - (void) clearPortals;
 - (CGPoint) getLocationOfPortal : (int) portalId;
+- (int) getAngleOfPortal : (int) portalId;
+
 @end

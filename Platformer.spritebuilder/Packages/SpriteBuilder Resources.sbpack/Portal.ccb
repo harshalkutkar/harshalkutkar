@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>231</integer>
+	<integer>237</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -257,6 +257,16 @@
 				<integer>0</integer>
 				<key>value</key>
 				<string>1</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>portalAngle</string>
+				<key>optimized</key>
+				<false/>
+				<key>type</key>
+				<integer>0</integer>
+				<key>value</key>
+				<string>0</string>
 			</dict>
 		</array>
 		<key>displayName</key>

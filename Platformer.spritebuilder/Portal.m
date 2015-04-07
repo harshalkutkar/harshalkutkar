@@ -13,6 +13,7 @@
 
 @synthesize portalId;
 @synthesize connectedPortalId;
+@synthesize portalAngle;
 
 - (void)didLoadFromCCB {
     //register as portal. (hopefully id is set in spritebuilder);
@@ -34,5 +35,11 @@
 {
     return connectedPortalId;
 }
+
+- (int) getAngleOfPortal
+{
+    return portalAngle;
+}
+
 
 @end
