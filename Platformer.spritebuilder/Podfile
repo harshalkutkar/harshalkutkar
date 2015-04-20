@@ -1,0 +1,15 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '7.0'
+
+target 'Platformer iOS' do
+pod 'Firebase', '>= 2.2.0'
+end
+
+target 'Platformer Android' do
+
+end
+
+target 'Platformer Mac' do
+
+end
+

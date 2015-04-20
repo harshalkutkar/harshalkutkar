@@ -13,6 +13,7 @@
 {
     int keys;
     int currentLevel;
+    int points;
     NSMutableDictionary *keyRequirement;
     NSMutableArray *portalArray;
  
@@ -52,6 +53,7 @@ static GameManager* _sharedMySingleton = nil;
         [self initRequirementDict];
         [self setCurrentLevel:1];
         [self setKeys:0];
+       
         
     }
     return self;
@@ -73,6 +75,9 @@ static GameManager* _sharedMySingleton = nil;
     
     //level 3 needs two keys [KEY-LEVEL PAIRS!!!]
     [keyRequirement setObject:[NSNumber numberWithInt:2] forKey:[NSNumber numberWithInt:3]];
+    
+    //level 4 needs two keys [KEY-LEVEL PAIRS!!!]
+    [keyRequirement setObject:[NSNumber numberWithInt:2] forKey:[NSNumber numberWithInt:4]];
      
     
     
@@ -210,5 +215,16 @@ static GameManager* _sharedMySingleton = nil;
     return 0;
 }
 
+//setting the points
+-(void) setPoints : (int) p
+{
+    NSLog(@"Setting points = %d",p);
+    points = p;
+}
+
+-(int) getPoints
+{
+    return  points;
+}
 
 @end

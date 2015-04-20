@@ -101,12 +101,14 @@
 		E73EB3AB1ACE54300048624E /* RotatingBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E73EB3AA1ACE54300048624E /* RotatingBlock.m */; };
 		E73EB3AE1ACE56F90048624E /* UpAndDownBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E73EB3AD1ACE56F90048624E /* UpAndDownBlock.m */; };
 		E73EB3B11ACE61950048624E /* ProgressionMap.m in Sources */ = {isa = PBXBuildFile; fileRef = E73EB3B01ACE61950048624E /* ProgressionMap.m */; };
+		E7B874041AE5A85B00DE6365 /* Gingerbread.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B874031AE5A85B00DE6365 /* Gingerbread.m */; };
 		E7CC87411AD08B6A003CA229 /* Portal.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CC87401AD08B6A003CA229 /* Portal.m */; };
 		E7E80DB41AC616CC0061BF1C /* Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E80DB31AC616CC0061BF1C /* Key.m */; };
 		E7E80DBB1AC61E940061BF1C /* LoseDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E80DBA1AC61E940061BF1C /* LoseDialog.m */; };
 		E7F0ABE31AC7B55C004F8581 /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0ABE21AC7B55C004F8581 /* GameManager.m */; };
 		E7F0ABE91AC7DE4A004F8581 /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0ABE81AC7DE4A004F8581 /* MainScene.m */; };
 		E7F0ABEC1AC7DEF5004F8581 /* WinDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0ABEB1AC7DEF5004F8581 /* WinDialog.m */; };
+		E7FC39671ADDF46E00D2E91B /* Rope.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC39661ADDF46E00D2E91B /* Rope.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,6 +233,8 @@
 		E73EB3AD1ACE56F90048624E /* UpAndDownBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpAndDownBlock.m; sourceTree = "<group>"; };
 		E73EB3AF1ACE61950048624E /* ProgressionMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressionMap.h; sourceTree = "<group>"; };
 		E73EB3B01ACE61950048624E /* ProgressionMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressionMap.m; sourceTree = "<group>"; };
+		E7B874021AE5A85B00DE6365 /* Gingerbread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gingerbread.h; path = Source/Gingerbread.h; sourceTree = "<group>"; };
+		E7B874031AE5A85B00DE6365 /* Gingerbread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gingerbread.m; path = Source/Gingerbread.m; sourceTree = "<group>"; };
 		E7CC873F1AD08B6A003CA229 /* Portal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Portal.h; sourceTree = "<group>"; };
 		E7CC87401AD08B6A003CA229 /* Portal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Portal.m; sourceTree = "<group>"; };
 		E7E80DB21AC616CC0061BF1C /* Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Key.h; sourceTree = "<group>"; };
@@ -243,6 +247,8 @@
 		E7F0ABE81AC7DE4A004F8581 /* MainScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScene.m; sourceTree = "<group>"; };
 		E7F0ABEA1AC7DEF5004F8581 /* WinDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinDialog.h; sourceTree = "<group>"; };
 		E7F0ABEB1AC7DEF5004F8581 /* WinDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinDialog.m; sourceTree = "<group>"; };
+		E7FC39651ADDF46E00D2E91B /* Rope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rope.h; sourceTree = "<group>"; };
+		E7FC39661ADDF46E00D2E91B /* Rope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rope.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -490,8 +496,12 @@
 				E7004DCF1ABE80C600492523 /* Ball.m */,
 				D352B48019EC608A00829775 /* MetalShaders */,
 				E73A10731ABA7E8200279FF1 /* References.txt */,
+				E7B874021AE5A85B00DE6365 /* Gingerbread.h */,
+				E7B874031AE5A85B00DE6365 /* Gingerbread.m */,
 				E73EB3AF1ACE61950048624E /* ProgressionMap.h */,
 				E73EB3B01ACE61950048624E /* ProgressionMap.m */,
+				E7FC39651ADDF46E00D2E91B /* Rope.h */,
+				E7FC39661ADDF46E00D2E91B /* Rope.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -872,7 +882,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7FC39671ADDF46E00D2E91B /* Rope.m in Sources */,
 				E7E80DBB1AC61E940061BF1C /* LoseDialog.m in Sources */,
+				E7B874041AE5A85B00DE6365 /* Gingerbread.m in Sources */,
 				E71118911AC204020061C6BE /* Pipe.m in Sources */,
 				E73EB3B11ACE61950048624E /* ProgressionMap.m in Sources */,
 				E7004DD01ABE80C600492523 /* Ball.m in Sources */,

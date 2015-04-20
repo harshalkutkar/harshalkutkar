@@ -16,14 +16,15 @@
 - (void) addKey;
 - (int) getKeys;
 - (void) setKeys: (int) x;
--(int) getRequiredKeysForLevel: (int) level;
+- (int) getRequiredKeysForLevel: (int) level;
 - (int) getCurrentLevel;
 - (void) setCurrentLevel : (int) level;
--(BOOL) checkIfPlayerHasRequiredKeysForLevel;
--(void) incrementLevel;
--(void) addPortal : (Portal*) p;
+- (BOOL) checkIfPlayerHasRequiredKeysForLevel;
+- (void) incrementLevel;
+- (void) addPortal : (Portal*) p;
 - (void) clearPortals;
 - (CGPoint) getLocationOfPortal : (int) portalId;
 - (int) getAngleOfPortal : (int) portalId;
-
+- (int) getPoints;
+- (int) setPoints : (int) p;
 @end

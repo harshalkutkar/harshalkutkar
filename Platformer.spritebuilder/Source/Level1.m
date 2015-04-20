@@ -6,6 +6,8 @@
 #import "GameManager.h"
 #import "CCPhysics+ObjectiveChipmunk.h"
 
+int const POINTS_GINGERBREAD = 75;
+int const POINTS_COCUPCAKE = 150;
 
 @implementation Level1
 {
@@ -14,6 +16,8 @@
     CCNode *_ballNode;
     CCNode *_contentNode;
     CCLabelTTF *_score;
+    CCLabelTTF *_points;
+    CCLabelTTF *_message;
 }
 
 - (id)init {
@@ -31,6 +35,9 @@
     
     //set keys
     [[GameManager sharedGameManager] setKeys:0];
+    
+    //set points
+    [[GameManager sharedGameManager] setPoints:0];
     
     //update [has to come after set!]
     [self updateHUD];
@@ -161,6 +168,9 @@
     int currentKeys = [[GameManager sharedGameManager] getKeys];
     NSString *scoreString =  [NSString stringWithFormat:@"%d/%d",currentKeys,requiredKeys];
     [_score setString:scoreString];
+    //refresh points as well!
+    int points = [[GameManager sharedGameManager] getPoints];
+    [_points setString:[NSString stringWithFormat:@"%d",points]];
 }
 
 
@@ -168,8 +178,55 @@
 - (BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair ball:(CCNode *)nodeA bCake:(CCNode *)nodeB
 {
     NSLog(@"Ball collided with bcake");
-    [nodeA.physicsBody applyImpulse:ccp(0, 3000.f)];
+    [nodeA.physicsBody applyImpulse:ccp(0, 1000.f)];
     return YES;
 }
+
+
+//Gingerbread Cookie
+- (BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair ball:(CCNode *)nodeA gingerbread:(CCNode *)nodeB
+{
+    NSLog(@"Ball collided with Gingerbread");
+    [nodeB removeFromParentAndCleanup:true];
+    int oldPoints = [[GameManager sharedGameManager] getPoints];
+    int newPoints = oldPoints + POINTS_GINGERBREAD;
+    [[GameManager sharedGameManager] setPoints:newPoints];
+    [self updateHUD];
+    return YES;
+}
+
+
+
+
+//Chocolate Orange Cup Cake Bounce
+- (BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair ball:(CCNode *)nodeA cocupcake:(CCNode *)nodeB
+{
+    NSLog(@"Ball collided with chocolate orange cupcake");
+    //Remove the key
+    [nodeB removeFromParentAndCleanup:true];
+    //Make the donut grow
+    float current_scale = nodeA.scale;
+    [nodeA setScale:current_scale*1.2];
+    
+    [_message setString:@"You're getting fat! Work out for a while."];
+    [self performSelector:@selector(makeNormalSize:) withObject:nil afterDelay:5.0f];
+    _ball.physicsBody.density = 6.00f;
+    
+    //update the points
+    int oldPoints = [[GameManager sharedGameManager] getPoints];
+    int newPoints = oldPoints + POINTS_COCUPCAKE;
+    [[GameManager sharedGameManager] setPoints:newPoints];
+    
+    [self updateHUD];
+    return YES;
+}
+-(void) makeNormalSize:(CCTime)dt
+{
+    
+    [_ball setScale:_ball.scale*0.8];
+    _ball.physicsBody.density = 5.00f;
+}
+
+
 
 @end
