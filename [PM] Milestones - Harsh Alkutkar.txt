@@ -15,24 +15,19 @@ Week 3. April 7.
 (Done.) Progression Map. 
 
 Week 4. April 14. 
-More levels (6 levels) and playtesting and finilize the difficluty of levels. 
-HUD. Head-up display. 
+(In progress) More levels (6 levels) and playtesting and finilize the difficluty of levels. 
+(Done.) HUD. Head-up display. 
 
 Week 5. 
-Have some power-ups. 
-Make a user tutorial. 
-Make 2 versions: with/without time constrain. 
-App store submission.
+(Done.) Finish power-ups.
+(Done.) Add collectables. 
+(In progress.) Facebook integration. 
 
 Week 6.  
 Analytics. 
-Polishing on Progression Map.
-Add collectables. 
+Facebook integration. 
+Make a user tutorial. 
 
-
-Optional features ========
-
-FB connection. 
 
 
 

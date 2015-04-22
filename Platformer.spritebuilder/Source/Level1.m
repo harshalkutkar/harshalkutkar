@@ -152,6 +152,15 @@ int const POINTS_COCUPCAKE = 150;
     //Remove the key
     [nodeB removeFromParentAndCleanup:true];
     
+    //if required keys display message
+    
+    BOOL hasKeys = [[GameManager sharedGameManager] checkIfPlayerHasRequiredKeysForLevel];
+    if (hasKeys)
+    {
+        [_message setString:@"Proceed to pipe!"];
+    }
+    
+    
      [self updateHUD];
     
     return YES;

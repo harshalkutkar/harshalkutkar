@@ -37,7 +37,7 @@
 		<string>Icon-Small@2x.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>org.cocos2d.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>org.cocos2d.$(PRODUCT_NAME:rfc1034identifier)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -70,6 +70,21 @@
 	<array>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>FacebookAppID</key>
+	<string>1648125122085580</string>
+	<key>FacebookDisplayName</key>
+	<string>Donut Rush</string>
+	<key>URL types</key>
+	<array>
+		<dict>
+			<key>Document Role</key>
+			<string>Editor</string>
+			<key>URL Schemes</key>
+			<array>
+				<string>fb1648125122085580</string>
+			</array>
+		</dict>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
