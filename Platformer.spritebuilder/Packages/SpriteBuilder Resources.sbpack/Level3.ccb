@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>2197</integer>
+	<integer>2235</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -279,204 +279,6 @@
 								<string>EffectControl</string>
 								<key>value</key>
 								<array/>
-							</dict>
-						</array>
-					</dict>
-					<dict>
-						<key>UUID</key>
-						<integer>388</integer>
-						<key>baseClass</key>
-						<string>CCBFile</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>customProperties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>portalId</string>
-								<key>optimized</key>
-								<false/>
-								<key>type</key>
-								<integer>0</integer>
-								<key>value</key>
-								<string>0</string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>connectedPortalId</string>
-								<key>optimized</key>
-								<false/>
-								<key>type</key>
-								<integer>0</integer>
-								<key>value</key>
-								<string>1</string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>portalAngle</string>
-								<key>optimized</key>
-								<false/>
-								<key>type</key>
-								<integer>0</integer>
-								<key>value</key>
-								<string>0</string>
-							</dict>
-						</array>
-						<key>displayName</key>
-						<string>Portal 0</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>1</integer>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>name</string>
-								<key>type</key>
-								<string>StringSimple</string>
-								<key>value</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
-									<real>30.43559455871582</real>
-									<real>261.07205200195312</real>
-									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>0.68308854103088379</real>
-									<real>0.68308854103088379</real>
-									<false/>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>ccbFile</string>
-								<key>type</key>
-								<string>CCBFile</string>
-								<key>value</key>
-								<string>Portal.ccb</string>
-							</dict>
-						</array>
-					</dict>
-					<dict>
-						<key>UUID</key>
-						<integer>883</integer>
-						<key>baseClass</key>
-						<string>CCBFile</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>customProperties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>portalId</string>
-								<key>optimized</key>
-								<false/>
-								<key>type</key>
-								<integer>0</integer>
-								<key>value</key>
-								<string>1</string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>connectedPortalId</string>
-								<key>optimized</key>
-								<false/>
-								<key>type</key>
-								<integer>0</integer>
-								<key>value</key>
-								<string>0</string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>portalAngle</string>
-								<key>optimized</key>
-								<false/>
-								<key>type</key>
-								<integer>0</integer>
-								<key>value</key>
-								<string>-270</string>
-							</dict>
-						</array>
-						<key>displayName</key>
-						<string>Portal 1</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>1</integer>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>name</string>
-								<key>type</key>
-								<string>StringSimple</string>
-								<key>value</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
-									<real>245.75630187988281</real>
-									<real>408.90765380859375</real>
-									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>0.68308854103088379</real>
-									<real>0.68308854103088379</real>
-									<false/>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>rotation</string>
-								<key>type</key>
-								<string>Degrees</string>
-								<key>value</key>
-								<real>-270</real>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>ccbFile</string>
-								<key>type</key>
-								<string>CCBFile</string>
-								<key>value</key>
-								<string>Portal.ccb</string>
 							</dict>
 						</array>
 					</dict>
@@ -1531,7 +1333,7 @@
 								<key>value</key>
 								<array>
 									<real>245.75630187988281</real>
-									<real>358.50665283203125</real>
+									<real>332.37771606445312</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1667,8 +1469,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>215.11225891113281</real>
-									<real>109.33978271484375</real>
+									<real>183.41151428222656</real>
+									<real>188.28952026367188</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -2081,8 +1883,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>245.75630187988281</real>
-									<real>90.3193359375</real>
+									<real>223.09864807128906</real>
+									<real>162.06857299804688</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -2156,8 +1958,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>277.45706176757812</real>
-									<real>109.33978271484375</real>
+									<real>261.09320068359375</real>
+									<real>188.28952026367188</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -2596,6 +2398,206 @@
 								<string>GingerBread.ccb</string>
 							</dict>
 						</array>
+					</dict>
+					<dict>
+						<key>UUID</key>
+						<integer>2215</integer>
+						<key>baseClass</key>
+						<string>CCBFile</string>
+						<key>children</key>
+						<array/>
+						<key>customClass</key>
+						<string></string>
+						<key>customProperties</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>portalId</string>
+								<key>optimized</key>
+								<false/>
+								<key>type</key>
+								<integer>0</integer>
+								<key>value</key>
+								<string>0</string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>connectedPortalId</string>
+								<key>optimized</key>
+								<false/>
+								<key>type</key>
+								<integer>0</integer>
+								<key>value</key>
+								<string>1</string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>portalAngle</string>
+								<key>optimized</key>
+								<false/>
+								<key>type</key>
+								<integer>0</integer>
+								<key>value</key>
+								<string>0</string>
+							</dict>
+						</array>
+						<key>displayName</key>
+						<string>Portal</string>
+						<key>memberVarAssignmentName</key>
+						<string></string>
+						<key>memberVarAssignmentType</key>
+						<integer>1</integer>
+						<key>properties</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>name</string>
+								<key>type</key>
+								<string>StringSimple</string>
+								<key>value</key>
+								<string></string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>position</string>
+								<key>type</key>
+								<string>Position</string>
+								<key>value</key>
+								<array>
+									<real>49.072856903076172</real>
+									<real>332.37771606445312</real>
+									<integer>0</integer>
+									<integer>0</integer>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>scale</string>
+								<key>type</key>
+								<string>ScaleLock</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<false/>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>ccbFile</string>
+								<key>type</key>
+								<string>CCBFile</string>
+								<key>value</key>
+								<string>Portal.ccb</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>UUID</key>
+						<integer>2218</integer>
+						<key>baseClass</key>
+						<string>CCBFile</string>
+						<key>children</key>
+						<array/>
+						<key>customClass</key>
+						<string></string>
+						<key>customProperties</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>portalId</string>
+								<key>optimized</key>
+								<false/>
+								<key>type</key>
+								<integer>0</integer>
+								<key>value</key>
+								<string>1</string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>connectedPortalId</string>
+								<key>optimized</key>
+								<false/>
+								<key>type</key>
+								<integer>0</integer>
+								<key>value</key>
+								<string>0</string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>portalAngle</string>
+								<key>optimized</key>
+								<false/>
+								<key>type</key>
+								<integer>0</integer>
+								<key>value</key>
+								<string>90</string>
+							</dict>
+						</array>
+						<key>displayName</key>
+						<string>Portal</string>
+						<key>memberVarAssignmentName</key>
+						<string></string>
+						<key>memberVarAssignmentType</key>
+						<integer>1</integer>
+						<key>properties</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>name</string>
+								<key>type</key>
+								<string>StringSimple</string>
+								<key>value</key>
+								<string></string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>position</string>
+								<key>type</key>
+								<string>Position</string>
+								<key>value</key>
+								<array>
+									<real>245.75630187988281</real>
+									<real>404.24270629882812</real>
+									<integer>0</integer>
+									<integer>0</integer>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>scale</string>
+								<key>type</key>
+								<string>ScaleLock</string>
+								<key>value</key>
+								<array>
+									<real>0.94364726543426514</real>
+									<real>0.94364726543426514</real>
+									<false/>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>rotation</string>
+								<key>type</key>
+								<string>Degrees</string>
+								<key>value</key>
+								<real>90</real>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>ccbFile</string>
+								<key>type</key>
+								<string>CCBFile</string>
+								<key>value</key>
+								<string>Portal.ccb</string>
+							</dict>
+						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
@@ -3771,8 +3773,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
