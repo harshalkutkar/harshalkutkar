@@ -67,6 +67,7 @@
 //facebook includes
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
+    [super applicationDidBecomeActive:application];
     [FBSDKAppEvents activateApp];
 }
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {

@@ -101,6 +101,10 @@
 		E73EB3AB1ACE54300048624E /* RotatingBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E73EB3AA1ACE54300048624E /* RotatingBlock.m */; };
 		E73EB3AE1ACE56F90048624E /* UpAndDownBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E73EB3AD1ACE56F90048624E /* UpAndDownBlock.m */; };
 		E73EB3B11ACE61950048624E /* ProgressionMap.m in Sources */ = {isa = PBXBuildFile; fileRef = E73EB3B01ACE61950048624E /* ProgressionMap.m */; };
+		E790836B1AEC3564007C0A6C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E790836A1AEC3564007C0A6C /* Social.framework */; };
+		E790836D1AEC356A007C0A6C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E790836C1AEC356A007C0A6C /* Accounts.framework */; };
+		E790836F1AEC3630007C0A6C /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E790836E1AEC3630007C0A6C /* FBSDKShareKit.framework */; };
+		E79083711AEC3671007C0A6C /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79083701AEC3671007C0A6C /* FBSDKLoginKit.framework */; };
 		E7B874041AE5A85B00DE6365 /* Gingerbread.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B874031AE5A85B00DE6365 /* Gingerbread.m */; };
 		E7CC87411AD08B6A003CA229 /* Portal.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CC87401AD08B6A003CA229 /* Portal.m */; };
 		E7E80DB41AC616CC0061BF1C /* Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E80DB31AC616CC0061BF1C /* Key.m */; };
@@ -234,6 +238,10 @@
 		E73EB3AD1ACE56F90048624E /* UpAndDownBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpAndDownBlock.m; sourceTree = "<group>"; };
 		E73EB3AF1ACE61950048624E /* ProgressionMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressionMap.h; sourceTree = "<group>"; };
 		E73EB3B01ACE61950048624E /* ProgressionMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressionMap.m; sourceTree = "<group>"; };
+		E790836A1AEC3564007C0A6C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		E790836C1AEC356A007C0A6C /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		E790836E1AEC3630007C0A6C /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		E79083701AEC3671007C0A6C /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		E7B874021AE5A85B00DE6365 /* Gingerbread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gingerbread.h; path = Source/Gingerbread.h; sourceTree = "<group>"; };
 		E7B874031AE5A85B00DE6365 /* Gingerbread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gingerbread.m; path = Source/Gingerbread.m; sourceTree = "<group>"; };
 		E7CC873F1AD08B6A003CA229 /* Portal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Portal.h; sourceTree = "<group>"; };
@@ -294,6 +302,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E79083711AEC3671007C0A6C /* FBSDKLoginKit.framework in Frameworks */,
+				E790836F1AEC3630007C0A6C /* FBSDKShareKit.framework in Frameworks */,
+				E790836D1AEC356A007C0A6C /* Accounts.framework in Frameworks */,
+				E790836B1AEC3564007C0A6C /* Social.framework in Frameworks */,
 				E7E9C6711AE6FE6E0029086F /* FBSDKCoreKit.framework in Frameworks */,
 				E7004DCC1ABE7B0500492523 /* CoreMotion.framework in Frameworks */,
 				7A97911819E631CD001FFC4D /* libcocos2d.a in Frameworks */,
@@ -555,6 +567,10 @@
 		B77F1B3017B978D7009739AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E79083701AEC3671007C0A6C /* FBSDKLoginKit.framework */,
+				E790836E1AEC3630007C0A6C /* FBSDKShareKit.framework */,
+				E790836C1AEC356A007C0A6C /* Accounts.framework */,
+				E790836A1AEC3564007C0A6C /* Social.framework */,
 				E7E9C6701AE6FE6E0029086F /* FBSDKCoreKit.framework */,
 				E7004DCB1ABE7B0500492523 /* CoreMotion.framework */,
 				BC5399D31A44DCC90063F482 /* AndroidKit.framework */,

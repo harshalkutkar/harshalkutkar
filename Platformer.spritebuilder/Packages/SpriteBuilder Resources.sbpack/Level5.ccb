@@ -1963,8 +1963,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>86.549873352050781</real>
-											<real>-236.10491943359375</real>
+											<real>77.964775085449219</real>
+											<real>-210.05311584472656</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -1992,8 +1992,6 @@
 										<string>CakeHalfUpDown.ccb</string>
 									</dict>
 								</array>
-								<key>selected</key>
-								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -2089,7 +2087,7 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>12.031402587890625</real>
+											<real>-0.12099967151880264</real>
 											<real>-130.05311584472656</real>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -2423,7 +2421,7 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>29.025506973266602</real>
+											<real>19.119625091552734</real>
 											<real>-116.49455261230469</real>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -3177,7 +3175,7 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>12.031402587890625</real>
+											<real>-0.12099967151880264</real>
 											<real>-175.05311584472656</real>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -3247,7 +3245,7 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>32.987861633300781</real>
+											<real>19.119625091552734</real>
 											<real>-193.05311584472656</real>
 											<integer>0</integer>
 											<integer>0</integer>

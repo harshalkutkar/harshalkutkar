@@ -9,7 +9,19 @@
 #import "LoseDialog.h"
 #import "GameManager.h"
 
+
+
 @implementation LoseDialog
+{
+  CCLabelTTF *_score;
+}
+
+- (void)didLoadFromCCB {
+    
+    int points = [[GameManager sharedGameManager] getPoints];
+    _score.string = [NSString stringWithFormat:@"%d", points];
+    
+}
 
 -(void) restart
 {
@@ -21,7 +33,7 @@
     //Now Load CCB
     CCScene *scene =  [CCBReader loadAsScene:levelToLoad];
     [[CCDirector sharedDirector] replaceScene: scene withTransition: [CCTransition transitionCrossFadeWithDuration: 0.5]];
-
+    
 }
 
 @end
