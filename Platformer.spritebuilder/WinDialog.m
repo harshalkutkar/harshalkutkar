@@ -33,9 +33,9 @@
      FBSDKShareLinkContent *content = [[FBSDKShareLinkContent alloc] init];
      
      // this should link to FB page for your app or AppStore link if published
-     content.contentURL = [NSURL URLWithString:@"https://www.facebook.com/makeschool"];
+     content.contentURL = [NSURL URLWithString:@"http://harshalkutkar.com/donut-rush/"];
      // URL of image to be displayed alongside post
-     content.imageURL = [NSURL URLWithString:@"https://git.makeschool.com/MakeSchool-Tutorials/News/f744d331484d043a373ee2a33d63626c352255d4//663032db-cf16-441b-9103-c518947c70e1/cover_photo.jpeg"];
+     content.imageURL = [NSURL URLWithString:@"http://harshalkutkar.com/donut-rush/img/preview.jpg"];
      // title of post
      int points = [[GameManager sharedGameManager] getPoints];
      int current = [[GameManager sharedGameManager] getCurrentLevel];
