@@ -391,6 +391,16 @@
 				<key>value</key>
 				<string>1</string>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>direction</string>
+				<key>optimized</key>
+				<false/>
+				<key>type</key>
+				<integer>0</integer>
+				<key>value</key>
+				<string>-1</string>
+			</dict>
 		</array>
 		<key>displayName</key>
 		<string>CCSprite</string>
@@ -401,7 +411,7 @@
 		<key>physicsBody</key>
 		<dict>
 			<key>affectedByGravity</key>
-			<false/>
+			<true/>
 			<key>allowsRotation</key>
 			<true/>
 			<key>bodyShape</key>
@@ -425,40 +435,40 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>-60.99609375</real>
-					<real>-19.285171508789062</real>
+					<real>-51.60546875</real>
+					<real>-16.328125</real>
 				</array>
 				<array>
-					<real>-62.4609375</real>
-					<real>19.046875</real>
+					<real>-51.796875</real>
+					<real>17.6640625</real>
 				</array>
 				<array>
-					<real>45.308624267578125</real>
-					<real>18.43359375</real>
+					<real>52.46875</real>
+					<real>19.35546875</real>
 				</array>
 				<array>
-					<real>45.652374267578125</real>
-					<real>-17.511734008789062</real>
+					<real>53.3515625</real>
+					<real>-15.90625</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>45.652374267578125</real>
-						<real>-17.511734008789062</real>
+						<real>53.3515625</real>
+						<real>-15.90625</real>
 					</array>
 					<array>
-						<real>45.308624267578125</real>
-						<real>18.43359375</real>
+						<real>52.46875</real>
+						<real>19.35546875</real>
 					</array>
 					<array>
-						<real>-62.4609375</real>
-						<real>19.046875</real>
+						<real>-51.796875</real>
+						<real>17.6640625</real>
 					</array>
 					<array>
-						<real>-60.99609375</real>
-						<real>-19.285171508789062</real>
+						<real>-51.60546875</real>
+						<real>-16.328125</real>
 					</array>
 				</array>
 			</array>

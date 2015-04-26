@@ -10,4 +10,5 @@
 
 @interface RotatingBlock : CCSprite
 @property (nonatomic, assign) int duration;
+@property (nonatomic, assign) int direction;
 @end

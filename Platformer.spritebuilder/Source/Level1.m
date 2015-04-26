@@ -5,6 +5,7 @@
 #import "Key.h"
 #import "GameManager.h"
 #import "CCPhysics+ObjectiveChipmunk.h"
+#import "UpAndDownBlock.h"
 
 int const POINTS_GINGERBREAD = 75;
 int const POINTS_COCUPCAKE = 150;
@@ -192,6 +193,8 @@ int const POINTS_COCUPCAKE = 150;
 }
 
 
+
+
 //Gingerbread Cookie
 - (BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair ball:(CCNode *)nodeA gingerbread:(CCNode *)nodeB
 {
@@ -215,10 +218,10 @@ int const POINTS_COCUPCAKE = 150;
     [nodeB removeFromParentAndCleanup:true];
     //Make the donut grow
     float current_scale = nodeA.scale;
-    [nodeA setScale:current_scale*1.2];
+    [nodeA setScale:current_scale*1.3];
     
     [_message setString:@"You're getting fat! Work out for a while."];
-    [self performSelector:@selector(makeNormalSize:) withObject:nil afterDelay:5.0f];
+    [self performSelector:@selector(makeNormalSize:) withObject:nil afterDelay:7.0f];
     _ball.physicsBody.density = 6.00f;
     
     //update the points
@@ -232,7 +235,7 @@ int const POINTS_COCUPCAKE = 150;
 -(void) makeNormalSize:(CCTime)dt
 {
     
-    [_ball setScale:_ball.scale*0.8];
+    [_ball setScale:_ball.scale*0.7];
     _ball.physicsBody.density = 5.00f;
 }
 

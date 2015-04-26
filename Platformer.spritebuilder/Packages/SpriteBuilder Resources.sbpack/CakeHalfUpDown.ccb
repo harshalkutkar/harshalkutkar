@@ -198,7 +198,7 @@
 						<key>value</key>
 						<array>
 							<real>0.0</real>
-							<real>-6</real>
+							<real>-7</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -307,6 +307,16 @@
 				<key>value</key>
 				<string>80</string>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>angle</string>
+				<key>optimized</key>
+				<false/>
+				<key>type</key>
+				<integer>0</integer>
+				<key>value</key>
+				<string>0</string>
+			</dict>
 		</array>
 		<key>displayName</key>
 		<string>CCSprite</string>
@@ -335,9 +345,9 @@
 			<key>dynamic</key>
 			<false/>
 			<key>elasticity</key>
-			<real>0.30000001192092896</real>
+			<real>0.5</real>
 			<key>friction</key>
-			<real>0.10000000149011612</real>
+			<real>0.30000001192092896</real>
 			<key>points</key>
 			<array>
 				<array>
@@ -345,12 +355,12 @@
 					<real>-9.364471435546875</real>
 				</array>
 				<array>
-					<real>-19.846952438354492</real>
-					<real>14.430609703063965</real>
+					<real>-20.53515625</real>
+					<real>11.109375</real>
 				</array>
 				<array>
-					<real>20.383916854858398</real>
-					<real>14.71076488494873</real>
+					<real>19.33984375</real>
+					<real>10.765625</real>
 				</array>
 				<array>
 					<real>19.9481201171875</real>
@@ -365,12 +375,12 @@
 						<real>-9.032435417175293</real>
 					</array>
 					<array>
-						<real>20.383916854858398</real>
-						<real>14.71076488494873</real>
+						<real>19.33984375</real>
+						<real>10.765625</real>
 					</array>
 					<array>
-						<real>-19.846952438354492</real>
-						<real>14.430609703063965</real>
+						<real>-20.53515625</real>
+						<real>11.109375</real>
 					</array>
 					<array>
 						<real>-19.821012496948242</real>

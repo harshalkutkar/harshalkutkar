@@ -78,7 +78,10 @@ static GameManager* _sharedMySingleton = nil;
     
     //level 4 needs two keys [KEY-LEVEL PAIRS!!!]
     [keyRequirement setObject:[NSNumber numberWithInt:2] forKey:[NSNumber numberWithInt:4]];
-     
+    
+    //level 4 needs two keys [KEY-LEVEL PAIRS!!!]
+    [keyRequirement setObject:[NSNumber numberWithInt:3] forKey:[NSNumber numberWithInt:5]];
+    
     
     
 }

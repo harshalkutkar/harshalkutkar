@@ -81,7 +81,7 @@
     
     //print out ball position
     CGPoint s = [self convertToWorldSpace: self.position];
-    NSLog(@"Ball Pos %f %f",s.x,s.y);
+    //NSLog(@"Ball Pos %f %f",s.x,s.y);
     [self boundsCheck];
     
 }

@@ -10,10 +10,12 @@
 
 @implementation RotatingBlock
 @synthesize duration;
+@synthesize direction;
 
 - (void)didLoadFromCCB {
     // if you have a rotating block variable
-    CCActionRotateBy *rot = [CCActionRotateBy actionWithDuration:duration angle:360];
+    
+    CCActionRotateBy *rot = [CCActionRotateBy actionWithDuration:duration angle:360*direction];
     [self runAction:[CCActionRepeatForever actionWithAction:rot]];
 }
 

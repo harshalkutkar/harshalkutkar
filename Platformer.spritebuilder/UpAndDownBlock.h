@@ -11,5 +11,6 @@
 @interface UpAndDownBlock : CCSprite
 
 @property (nonatomic, assign) int amount;
+@property (nonatomic, assign) int angle;
 
 @end
