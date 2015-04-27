@@ -109,6 +109,7 @@
 		E7CC87411AD08B6A003CA229 /* Portal.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CC87401AD08B6A003CA229 /* Portal.m */; };
 		E7E80DB41AC616CC0061BF1C /* Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E80DB31AC616CC0061BF1C /* Key.m */; };
 		E7E80DBB1AC61E940061BF1C /* LoseDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E80DBA1AC61E940061BF1C /* LoseDialog.m */; };
+		E7E8D72B1AEDC6BB00E28671 /* Onboard.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E8D72A1AEDC6BB00E28671 /* Onboard.m */; };
 		E7E9C6711AE6FE6E0029086F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E9C6701AE6FE6E0029086F /* FBSDKCoreKit.framework */; };
 		E7F0ABE31AC7B55C004F8581 /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0ABE21AC7B55C004F8581 /* GameManager.m */; };
 		E7F0ABE91AC7DE4A004F8581 /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0ABE81AC7DE4A004F8581 /* MainScene.m */; };
@@ -250,6 +251,8 @@
 		E7E80DB31AC616CC0061BF1C /* Key.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Key.m; sourceTree = "<group>"; };
 		E7E80DB91AC61E940061BF1C /* LoseDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoseDialog.h; sourceTree = "<group>"; };
 		E7E80DBA1AC61E940061BF1C /* LoseDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoseDialog.m; sourceTree = "<group>"; };
+		E7E8D7291AEDC6BB00E28671 /* Onboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Onboard.h; sourceTree = "<group>"; };
+		E7E8D72A1AEDC6BB00E28671 /* Onboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Onboard.m; sourceTree = "<group>"; };
 		E7E9C6701AE6FE6E0029086F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		E7F0ABE11AC7B55C004F8581 /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
 		E7F0ABE21AC7B55C004F8581 /* GameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameManager.m; sourceTree = "<group>"; };
@@ -503,6 +506,8 @@
 				E7F0ABEB1AC7DEF5004F8581 /* WinDialog.m */,
 				E7CC873F1AD08B6A003CA229 /* Portal.h */,
 				E7CC87401AD08B6A003CA229 /* Portal.m */,
+				E7E8D7291AEDC6BB00E28671 /* Onboard.h */,
+				E7E8D72A1AEDC6BB00E28671 /* Onboard.m */,
 				E7E80DB21AC616CC0061BF1C /* Key.h */,
 				E7E80DB31AC616CC0061BF1C /* Key.m */,
 				E711188F1AC204020061C6BE /* Pipe.h */,
@@ -914,6 +919,7 @@
 				E7CC87411AD08B6A003CA229 /* Portal.m in Sources */,
 				E73EB3AE1ACE56F90048624E /* UpAndDownBlock.m in Sources */,
 				E73EB3AB1ACE54300048624E /* RotatingBlock.m in Sources */,
+				E7E8D72B1AEDC6BB00E28671 /* Onboard.m in Sources */,
 				E7F0ABE91AC7DE4A004F8581 /* MainScene.m in Sources */,
 				E7F0ABE31AC7B55C004F8581 /* GameManager.m in Sources */,
 				7A046D8C19E8A20E004C4763 /* Level1.m in Sources */,

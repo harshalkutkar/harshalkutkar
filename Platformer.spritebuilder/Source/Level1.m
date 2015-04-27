@@ -6,6 +6,7 @@
 #import "GameManager.h"
 #import "CCPhysics+ObjectiveChipmunk.h"
 #import "UpAndDownBlock.h"
+#import "Onboard.h"
 
 int const POINTS_GINGERBREAD = 75;
 int const POINTS_COCUPCAKE = 150;
@@ -19,6 +20,7 @@ int const POINTS_COCUPCAKE = 150;
     CCLabelTTF *_score;
     CCLabelTTF *_points;
     CCLabelTTF *_message;
+    CCNode *_onboardNode;
 }
 
 - (id)init {
@@ -63,6 +65,16 @@ int const POINTS_COCUPCAKE = 150;
     
     //Make sure user interaction is enabled.
     self.userInteractionEnabled = YES;
+    
+    //If level 1 start onboarding
+    int current = [[GameManager sharedGameManager] getCurrentLevel];
+    if (current == 1)
+    {
+        //Load Onboarding #1
+        Onboard *_onOne = (Onboard*) [CCBReader load:@"OnboardOne" owner:self];
+        _onOne.position = ccp(0,0);
+        [_onboardNode addChild:_onOne];
+    }
     
 
     
@@ -232,6 +244,8 @@ int const POINTS_COCUPCAKE = 150;
     [self updateHUD];
     return YES;
 }
+
+
 -(void) makeNormalSize:(CCTime)dt
 {
     
@@ -239,6 +253,21 @@ int const POINTS_COCUPCAKE = 150;
     _ball.physicsBody.density = 5.00f;
 }
 
+- (void) removeOnboarding
+{
+    CCLOG(@"Remove Onboarding Called");
+    [_onboardNode removeFromParentAndCleanup:true];
+}
+
+- (void) nextOnboarding
+{
+    [_onboardNode removeAllChildrenWithCleanup:true];
+    //Load Onboarding #2
+    Onboard *_onTwo = (Onboard*) [CCBReader load:@"OnboardTwo" owner:self];
+    _onTwo.position = ccp(0,0);
+    [_onboardNode addChild:_onTwo];
+    
+}
 
 
 @end
