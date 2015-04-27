@@ -134,7 +134,7 @@ int const POINTS_COCUPCAKE = 150;
     
     
     NSLog(@"Angle: %d ",angle);
-     if (angle == -270 )
+     if (angle == 90 )
      {
          destination.y = destination.y - 50;
      }
