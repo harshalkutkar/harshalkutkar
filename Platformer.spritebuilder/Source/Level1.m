@@ -168,6 +168,27 @@ int const POINTS_COCUPCAKE = 150;
        
         
     }
+    //Particle Effect
+    // load particle effect
+    CCParticleSystem *explosion = (CCParticleSystem *)[CCBReader load:@"Eat"];
+    // make the particle effect clean itself up, once it is completed
+    explosion.autoRemoveOnFinish = TRUE;
+    // place the particle effect on the seals position
+    explosion.position = nodeB.position;
+    // add the particle effect to the same node the seal is on
+    [nodeB.parent addChild:explosion];
+    
+    
+    //coming In effect
+    // load particle effect
+    CCParticleSystem *explosion2 = (CCParticleSystem *)[CCBReader load:@"Entry"];
+    // make the particle effect clean itself up, once it is completed
+    explosion2.autoRemoveOnFinish = TRUE;
+    // place the particle effect on the seals position
+    explosion2.position = destination;
+    // add the particle effect to the same node the seal is on
+    [nodeB.parent addChild:explosion2];
+    
     
     [nodeA setPositionInPoints:destination];
     
@@ -184,6 +205,17 @@ int const POINTS_COCUPCAKE = 150;
     NSLog(@"Ball and Key Collided");
     //Add a Key (From the Singleton)
     [[GameManager sharedGameManager] addKey];
+    
+    //Particle Effect
+    // load particle effect
+    CCParticleSystem *explosion = (CCParticleSystem *)[CCBReader load:@"Eat"];
+    // make the particle effect clean itself up, once it is completed
+    explosion.autoRemoveOnFinish = TRUE;
+    // place the particle effect on the seals position
+    explosion.position = nodeB.position;
+    // add the particle effect to the same node the seal is on
+    [nodeB.parent addChild:explosion];
+    
     
     //Remove the key
     [nodeB removeFromParentAndCleanup:true];
@@ -241,6 +273,10 @@ int const POINTS_COCUPCAKE = 150;
     [nodeB removeFromParentAndCleanup:true];
     int oldPoints = [[GameManager sharedGameManager] getPoints];
     int newPoints = oldPoints + POINTS_GINGERBREAD;
+    OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
+    // play sound effect
+    [audio playEffect:@"CashRegister.mp3" loop:NO];
+
     [[GameManager sharedGameManager] setPoints:newPoints];
     [self updateHUD];
     return YES;

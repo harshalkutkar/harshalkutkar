@@ -102,6 +102,7 @@
 		E73EB3AE1ACE56F90048624E /* UpAndDownBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E73EB3AD1ACE56F90048624E /* UpAndDownBlock.m */; };
 		E73EB3B11ACE61950048624E /* ProgressionMap.m in Sources */ = {isa = PBXBuildFile; fileRef = E73EB3B01ACE61950048624E /* ProgressionMap.m */; };
 		E780A73B1AF02F56003A3B06 /* Boink.caf in Resources */ = {isa = PBXBuildFile; fileRef = E780A73A1AF02F56003A3B06 /* Boink.caf */; };
+		E780A73D1AF03318003A3B06 /* CashRegister.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E780A73C1AF03318003A3B06 /* CashRegister.mp3 */; };
 		E790836B1AEC3564007C0A6C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E790836A1AEC3564007C0A6C /* Social.framework */; };
 		E790836D1AEC356A007C0A6C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E790836C1AEC356A007C0A6C /* Accounts.framework */; };
 		E790836F1AEC3630007C0A6C /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E790836E1AEC3630007C0A6C /* FBSDKShareKit.framework */; };
@@ -241,6 +242,7 @@
 		E73EB3AF1ACE61950048624E /* ProgressionMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressionMap.h; sourceTree = "<group>"; };
 		E73EB3B01ACE61950048624E /* ProgressionMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressionMap.m; sourceTree = "<group>"; };
 		E780A73A1AF02F56003A3B06 /* Boink.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Boink.caf; path = ../../../Assets/Boink.caf; sourceTree = "<group>"; };
+		E780A73C1AF03318003A3B06 /* CashRegister.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = CashRegister.mp3; path = ../../../../../Downloads/CashRegister.mp3; sourceTree = "<group>"; };
 		E790836A1AEC3564007C0A6C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		E790836C1AEC356A007C0A6C /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		E790836E1AEC3630007C0A6C /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -642,6 +644,7 @@
 		E780A7361AF02DE5003A3B06 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				E780A73C1AF03318003A3B06 /* CashRegister.mp3 */,
 				E780A73A1AF02F56003A3B06 /* Boink.caf */,
 			);
 			name = Audio;
@@ -835,6 +838,7 @@
 				B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */,
 				B71F5916188484E7003F4D28 /* iPhone-old@2x.png in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
+				E780A73D1AF03318003A3B06 /* CashRegister.mp3 in Resources */,
 				B71F591A188484E7003F4D28 /* Settings@2x.png in Resources */,
 				B7378976180762440076A88C /* Default-Landscape~ipad.png in Resources */,
 				B71F5915188484E7003F4D28 /* iPhone-old.png in Resources */,
