@@ -79,8 +79,11 @@ static GameManager* _sharedMySingleton = nil;
     //level 4 needs two keys [KEY-LEVEL PAIRS!!!]
     [keyRequirement setObject:[NSNumber numberWithInt:2] forKey:[NSNumber numberWithInt:4]];
     
-    //level 4 needs two keys [KEY-LEVEL PAIRS!!!]
+    //level 5 needs two keys [KEY-LEVEL PAIRS!!!]
     [keyRequirement setObject:[NSNumber numberWithInt:3] forKey:[NSNumber numberWithInt:5]];
+    
+    //level 6 needs two keys [KEY-LEVEL PAIRS!!!]
+    [keyRequirement setObject:[NSNumber numberWithInt:2] forKey:[NSNumber numberWithInt:6]];
     
     
     
@@ -197,7 +200,7 @@ static GameManager* _sharedMySingleton = nil;
              return [portal returnLocation];
          }
     }
-    NSLog (@"No such portal found");
+    NSLog (@"No such portal found returning 0,0");
     return ccp(0.0f,0.0f);
 }
 

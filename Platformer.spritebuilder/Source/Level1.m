@@ -54,13 +54,6 @@ int const POINTS_COCUPCAKE = 150;
     _ball = (Ball*) [CCBReader load:@"Ball"];
     _ball.position = ccp(162,558);
     
-    //Add it to the physics node.
-    [_physicsNode addChild:_ball];
-
-    
-    //Set the camera to follow the ball (might need it later)
-    CCActionFollow *follow = [CCActionFollow actionWithTarget:_ball worldBoundary:self.boundingBox];
-    [self runAction:follow];
     
     
     //Make sure user interaction is enabled.
@@ -74,7 +67,36 @@ int const POINTS_COCUPCAKE = 150;
         Onboard *_onOne = (Onboard*) [CCBReader load:@"OnboardOne" owner:self];
         _onOne.position = ccp(0,0);
         [_onboardNode addChild:_onOne];
+        [_ball setPaused:true];
+        
+      
     }
+    else if (current == 2)
+    {
+        //Load Onboarding #3
+        Onboard *_onOne = (Onboard*) [CCBReader load:@"OnboardThree" owner:self];
+        _onOne.position = ccp(0,0);
+        [_onboardNode addChild:_onOne];
+        
+        
+    }
+    else if (current == 3)
+    {
+        //Load Onboarding #4
+        Onboard *_onOne = (Onboard*) [CCBReader load:@"OnboardFour" owner:self];
+        _onOne.position = ccp(0,0);
+        [_onboardNode addChild:_onOne];
+    }
+    else
+    {
+        
+        //Load the initial ball at the top
+      
+        [_physicsNode addChild:_ball];
+        
+    }
+    
+    
     
 
     
@@ -137,12 +159,13 @@ int const POINTS_COCUPCAKE = 150;
      if (angle == 90 )
      {
          destination.y = destination.y - 50;
+         
      }
     
     if (angle == 0)
     {
         destination.x = destination.x + 50;
-        [nodeA.physicsBody applyImpulse:(ccp(400.0f,0))];
+       
         
     }
     
@@ -201,6 +224,10 @@ int const POINTS_COCUPCAKE = 150;
 {
     NSLog(@"Ball collided with bcake");
     [nodeA.physicsBody applyImpulse:ccp(0, 1000.f)];
+    // access audio object
+    OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
+    // play sound effect
+    [audio playEffect:@"Boink.caf" loop:NO];
     return YES;
 }
 
@@ -256,6 +283,10 @@ int const POINTS_COCUPCAKE = 150;
 - (void) removeOnboarding
 {
     CCLOG(@"Remove Onboarding Called");
+    //Add it to the physics node if not added
+    _ball = (Ball*) [CCBReader load:@"Ball"];
+    _ball.position = ccp(162,558);
+    [_physicsNode addChild:_ball];
     [_onboardNode removeFromParentAndCleanup:true];
 }
 

@@ -23,7 +23,7 @@
 
 - (CGPoint) returnLocation
 {
-    return [self.parent convertToWorldSpace:self.position];
+    return self.position;
 }
 
 - (int) getPortalId

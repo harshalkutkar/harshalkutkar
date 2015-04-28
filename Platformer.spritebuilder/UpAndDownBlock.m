@@ -31,10 +31,24 @@
                           nil
                           ]]];
     }
+    if (angle == 77)
+    {
+        double x = randomFloat(0.4f, 1.0f);
+        CCLOG(@"Float %f",x);
+        CCLOG(@"Angle 180");
+        [self runAction:[CCActionRepeatForever actionWithAction:
+                         [CCActionSequence actions:
+                          [CCActionMoveTo actionWithDuration:x position:ccp([self position].x+amount,[self position].y)],
+                          [CCActionMoveTo actionWithDuration:x position:ccp([self position].x-amount,[self position].y)],
+                          nil
+                          ]]];
+
+    }
+    
     else
     {
     
-        double x = randomFloat(1.5f, 3.5f);
+        double x = randomFloat(3.5f, 6.5f);
         
         [self runAction:[CCActionRepeatForever actionWithAction:
                        [CCActionSequence actions:

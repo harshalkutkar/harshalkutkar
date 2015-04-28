@@ -56,7 +56,7 @@
 					<key>value</key>
 					<array>
 						<real>70.339309692382812</real>
-						<real>475.934814453125</real>
+						<real>759.934814453125</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -165,7 +165,7 @@
 					<key>value</key>
 					<array>
 						<real>92.545913696289062</real>
-						<real>425.05801391601562</real>
+						<real>709.05804443359375</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -274,7 +274,7 @@
 					<key>value</key>
 					<array>
 						<real>279.0032958984375</real>
-						<real>479.22274780273438</real>
+						<real>763.2227783203125</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -383,7 +383,7 @@
 					<key>value</key>
 					<array>
 						<real>263.1234130859375</real>
-						<real>430.8343505859375</real>
+						<real>714.8343505859375</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -1939,6 +1939,16 @@
 										<key>value</key>
 										<string>120</string>
 									</dict>
+									<dict>
+										<key>name</key>
+										<string>angle</string>
+										<key>optimized</key>
+										<false/>
+										<key>type</key>
+										<integer>0</integer>
+										<key>value</key>
+										<string>0</string>
+									</dict>
 								</array>
 								<key>displayName</key>
 								<string>UpAndDownBlock</string>
@@ -1992,8 +2002,6 @@
 										<string>CakeHalfUpDown.ccb</string>
 									</dict>
 								</array>
-								<key>selected</key>
-								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -5898,8 +5906,8 @@
 				<string>Point</string>
 				<key>value</key>
 				<array>
-					<real>0.5</real>
-					<real>0.5</real>
+					<real>0.0</real>
+					<real>0.0</real>
 				</array>
 			</dict>
 			<dict>
@@ -5916,6 +5924,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
