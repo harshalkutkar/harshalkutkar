@@ -211,7 +211,7 @@
 		B73789861807631A0076A88C /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Source/Prefix.pch; sourceTree = SOURCE_ROOT; };
 		B7378992180767190076A88C /* Level1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level1.h; path = Source/Level1.h; sourceTree = "<group>"; };
 		B7378993180767190076A88C /* Level1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level1.m; path = Source/Level1.m; sourceTree = "<group>"; };
-		B77F1B2E17B978D7009739AE /* Platformer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Platformer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77F1B2E17B978D7009739AE /* Donut Rush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Donut Rush.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77F1B3117B978D7009739AE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B77F1B3317B978D7009739AE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B77F1B3517B978D7009739AE /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -566,7 +566,7 @@
 		B77F1B2F17B978D7009739AE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B77F1B2E17B978D7009739AE /* Platformer.app */,
+				B77F1B2E17B978D7009739AE /* Donut Rush.app */,
 				927F61BF196C771E000F43EF /* Platformer Android.app */,
 				7A4035FF19DDEE84007B6E8F /* Platformer Mac.app */,
 			);
@@ -707,7 +707,7 @@
 			);
 			name = "Platformer iOS";
 			productName = Example;
-			productReference = B77F1B2E17B978D7009739AE /* Platformer.app */;
+			productReference = B77F1B2E17B978D7009739AE /* Donut Rush.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1248,7 +1248,7 @@
 					"-lz",
 					"-ObjC",
 				);
-				PRODUCT_NAME = Platformer;
+				PRODUCT_NAME = "Donut Rush";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1286,7 +1286,7 @@
 					"-lz",
 					"-ObjC",
 				);
-				PRODUCT_NAME = Platformer;
+				PRODUCT_NAME = "Donut Rush";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
