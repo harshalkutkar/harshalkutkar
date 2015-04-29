@@ -21,12 +21,11 @@ Week 4. April 14.
 Week 5. 
 (Done.) Finish power-ups.
 (Done.) Add collectables. 
-(In progress.) Facebook integration. 
+(Done.) Facebook integration. 
 
 Week 6.  
-Analytics. 
-Facebook integration. 
-Make a user tutorial. 
+(Todo.) Analytics. 
+(Done.) Make a user tutorial. 
 
 
 
