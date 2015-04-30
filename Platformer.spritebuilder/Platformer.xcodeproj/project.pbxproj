@@ -101,6 +101,9 @@
 		E73EB3AB1ACE54300048624E /* RotatingBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E73EB3AA1ACE54300048624E /* RotatingBlock.m */; };
 		E73EB3AE1ACE56F90048624E /* UpAndDownBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E73EB3AD1ACE56F90048624E /* UpAndDownBlock.m */; };
 		E73EB3B11ACE61950048624E /* ProgressionMap.m in Sources */ = {isa = PBXBuildFile; fileRef = E73EB3B01ACE61950048624E /* ProgressionMap.m */; };
+		E75667A51AF2CE6F0052205C /* sad.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E75667A41AF2CE6F0052205C /* sad.mp3 */; };
+		E75667A81AF2CF520052205C /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E75667A71AF2CF520052205C /* win.mp3 */; };
+		E75667AC1AF2D0B60052205C /* chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E75667AB1AF2D0B60052205C /* chime.mp3 */; };
 		E780A73B1AF02F56003A3B06 /* Boink.caf in Resources */ = {isa = PBXBuildFile; fileRef = E780A73A1AF02F56003A3B06 /* Boink.caf */; };
 		E780A73D1AF03318003A3B06 /* CashRegister.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E780A73C1AF03318003A3B06 /* CashRegister.mp3 */; };
 		E790836B1AEC3564007C0A6C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E790836A1AEC3564007C0A6C /* Social.framework */; };
@@ -241,6 +244,9 @@
 		E73EB3AD1ACE56F90048624E /* UpAndDownBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpAndDownBlock.m; sourceTree = "<group>"; };
 		E73EB3AF1ACE61950048624E /* ProgressionMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressionMap.h; sourceTree = "<group>"; };
 		E73EB3B01ACE61950048624E /* ProgressionMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressionMap.m; sourceTree = "<group>"; };
+		E75667A41AF2CE6F0052205C /* sad.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sad.mp3; path = ../../../../../Downloads/sad.mp3; sourceTree = "<group>"; };
+		E75667A71AF2CF520052205C /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = win.mp3; path = ../../../../../Downloads/win.mp3; sourceTree = "<group>"; };
+		E75667AB1AF2D0B60052205C /* chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = chime.mp3; path = ../../../../../Downloads/chime.mp3; sourceTree = "<group>"; };
 		E780A73A1AF02F56003A3B06 /* Boink.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Boink.caf; path = ../../../Assets/Boink.caf; sourceTree = "<group>"; };
 		E780A73C1AF03318003A3B06 /* CashRegister.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = CashRegister.mp3; path = ../../../../../Downloads/CashRegister.mp3; sourceTree = "<group>"; };
 		E790836A1AEC3564007C0A6C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -644,6 +650,9 @@
 		E780A7361AF02DE5003A3B06 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				E75667AB1AF2D0B60052205C /* chime.mp3 */,
+				E75667A71AF2CF520052205C /* win.mp3 */,
+				E75667A41AF2CE6F0052205C /* sad.mp3 */,
 				E780A73C1AF03318003A3B06 /* CashRegister.mp3 */,
 				E780A73A1AF02F56003A3B06 /* Boink.caf */,
 			);
@@ -844,8 +853,11 @@
 				B7378976180762440076A88C /* Default-Landscape~ipad.png in Resources */,
 				B71F5915188484E7003F4D28 /* iPhone-old.png in Resources */,
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,
+				E75667A51AF2CE6F0052205C /* sad.mp3 in Resources */,
 				E780A73B1AF02F56003A3B06 /* Boink.caf in Resources */,
 				B7378975180762440076A88C /* Default-568h@2x.png in Resources */,
+				E75667AC1AF2D0B60052205C /* chime.mp3 in Resources */,
+				E75667A81AF2CF520052205C /* win.mp3 in Resources */,
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,
 				B7378977180762440076A88C /* Default.png in Resources */,
 				E73A10741ABA7E8200279FF1 /* References.txt in Resources */,

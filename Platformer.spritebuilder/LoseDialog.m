@@ -20,11 +20,18 @@
     
     int points = [[GameManager sharedGameManager] getPoints];
     _score.string = [NSString stringWithFormat:@"%d", points];
+    OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
+    // play sound effect
+    [audio playEffect:@"sad.mp3" loop:NO];
+    
     
 }
 
 -(void) restart
 {
+    //stop all effects
+    [[OALSimpleAudio sharedInstance] stopAllEffects];
+    
     //Get the current
     int current = [[GameManager sharedGameManager] getCurrentLevel];
     //Construct Name

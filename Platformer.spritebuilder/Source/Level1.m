@@ -203,6 +203,12 @@ int const POINTS_COCUPCAKE = 150;
 - (BOOL)ccPhysicsCollisionPreSolve:(CCPhysicsCollisionPair *)pair ball:(CCNode *)nodeA key:(Key *)nodeB
 {
     NSLog(@"Ball and Key Collided");
+    //Play Sound
+    OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
+    // play sound effect
+    [audio playEffect:@"chime.mp3" loop:NO];
+
+    
     //Add a Key (From the Singleton)
     [[GameManager sharedGameManager] addKey];
     
