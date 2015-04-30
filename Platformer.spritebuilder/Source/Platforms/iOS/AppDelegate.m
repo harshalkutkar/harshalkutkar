@@ -24,9 +24,11 @@
  */
 
 #import "cocos2d.h"
+#import "Mixpanel.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import "AppDelegate.h"
 #import "CCBuilderReader.h"
+#define MIXPANEL_TOKEN @"69eb3e9dde2cc4e5324b00727134192e"
 
 @implementation AppController
 
@@ -51,6 +53,8 @@
     
     // Do any extra configuration of Cocos2d here (the example line changes the pixel format for faster rendering, but with less colors)
     //[cocos2dSetup setObject:kEAGLColorFormatRGB565 forKey:CCConfigPixelFormat];
+     [Mixpanel sharedInstanceWithToken:MIXPANEL_TOKEN];
+    
     
     [self setupCocos2dWithOptions:cocos2dSetup];
     
@@ -61,6 +65,8 @@
 
 - (CCScene*) startScene
 {
+   
+    
     return [CCBReader loadAsScene:@"MainScene"];
 }
 

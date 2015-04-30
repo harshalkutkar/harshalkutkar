@@ -11,6 +11,10 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKShareKit/FBSDKShareKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#define MIXPANEL_TOKEN @"69eb3e9dde2cc4e5324b00727134192e"
+#import "Mixpanel.h"
+
+
 
 @implementation WinDialog
 {
@@ -24,6 +28,16 @@
     OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
     // play sound effect
     [audio playEffect:@"win.mp3" loop:NO];
+    
+    
+    //MixPanel
+    [Mixpanel sharedInstanceWithToken:MIXPANEL_TOKEN];
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"Completed a Level" properties:@{
+                                                 @"Level": @([[GameManager sharedGameManager] getCurrentLevel]).stringValue,
+                                                 @"Score": @([[GameManager sharedGameManager] getPoints]).stringValue
+                              
+                                                 }];
 
     
 }

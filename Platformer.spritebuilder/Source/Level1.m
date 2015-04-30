@@ -7,6 +7,9 @@
 #import "CCPhysics+ObjectiveChipmunk.h"
 #import "UpAndDownBlock.h"
 #import "Onboard.h"
+#import "Mixpanel.h"
+
+#define MIXPANEL_TOKEN @"69eb3e9dde2cc4e5324b00727134192e"
 
 int const POINTS_GINGERBREAD = 75;
 int const POINTS_COCUPCAKE = 150;
@@ -34,7 +37,11 @@ int const POINTS_COCUPCAKE = 150;
 
 - (void)didLoadFromCCB {
     
-    
+  
+    // Initialize the library with your
+    // Mixpanel project token, MIXPANEL_TOKEN
+    [Mixpanel sharedInstanceWithToken:MIXPANEL_TOKEN];
+
     
     //set keys
     [[GameManager sharedGameManager] setKeys:0];
@@ -96,7 +103,13 @@ int const POINTS_COCUPCAKE = 150;
         
     }
     
+    //Mixpanel Tracking
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
     
+    [mixpanel track:@"Level Started" properties:@{
+                                                  @"Level": @([[GameManager sharedGameManager] getCurrentLevel]).stringValue,
+                                                  @"Time":  [self getCurrentTime]
+                                                  }];
     
 
     
@@ -141,6 +154,9 @@ int const POINTS_COCUPCAKE = 150;
 
     }
     
+
+    
+       
      [self updateHUD];
     
     return YES;
@@ -234,6 +250,15 @@ int const POINTS_COCUPCAKE = 150;
         [_message setString:@"Proceed to pipe!"];
     }
     
+    //Mixpanel Tracking
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"Key(Lolly) Collected" properties:@{
+                                                                       @"Level": @([[GameManager sharedGameManager] getCurrentLevel]).stringValue,
+                                                                       @"Time":  [self getCurrentTime],
+                                                                       @"Score": @([[GameManager sharedGameManager] getPoints]).stringValue,
+                                                                       @"Keys Collected":@([[GameManager sharedGameManager] getKeys]).stringValue
+                                                                       }];
+
     
      [self updateHUD];
     
@@ -282,6 +307,14 @@ int const POINTS_COCUPCAKE = 150;
     OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
     // play sound effect
     [audio playEffect:@"CashRegister.mp3" loop:NO];
+    
+    //track with mixpanel
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"Gingerbread Collected" properties:@{
+                                                  @"Level": @([[GameManager sharedGameManager] getCurrentLevel]).stringValue,
+                                                  @"Time":  [self getCurrentTime],
+                                                  @"Score": @([[GameManager sharedGameManager] getPoints]).stringValue
+                                                  }];
 
     [[GameManager sharedGameManager] setPoints:newPoints];
     [self updateHUD];
@@ -309,6 +342,15 @@ int const POINTS_COCUPCAKE = 150;
     int oldPoints = [[GameManager sharedGameManager] getPoints];
     int newPoints = oldPoints + POINTS_COCUPCAKE;
     [[GameManager sharedGameManager] setPoints:newPoints];
+    
+    //Mixpanel Cupcake Tracking
+    //track with mixpanel
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"Chocolate Orange Cupcake Collected" properties:@{
+                                                          @"Level": @([[GameManager sharedGameManager] getCurrentLevel]).stringValue,
+                                                          @"Time":  [self getCurrentTime],
+                                                          @"Score": @([[GameManager sharedGameManager] getPoints]).stringValue
+                                                          }];
     
     [self updateHUD];
     return YES;
@@ -340,6 +382,15 @@ int const POINTS_COCUPCAKE = 150;
     _onTwo.position = ccp(0,0);
     [_onboardNode addChild:_onTwo];
     
+}
+
+- (NSString *) getCurrentTime
+{
+    NSDate *currentTime = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"hh-mm:ss"];
+    NSString *resultString = [dateFormatter stringFromDate: currentTime];
+    return resultString;
 }
 
 

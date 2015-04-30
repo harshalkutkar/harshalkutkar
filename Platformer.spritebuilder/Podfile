@@ -3,10 +3,11 @@
 
 target 'Platformer iOS' do
 pod 'Firebase', '>= 2.2.0'
+pod 'Mixpanel'
 end
 
 target 'Platformer Android' do
-
+pod 'Mixpanel'
 end
 
 target 'Platformer Mac' do
