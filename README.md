@@ -1,6 +1,6 @@
 ----------
 Donut Rush
-
+Wiki Link: http://donut-rush.wikia.com/
 ----------
 
 Game	Description
@@ -37,13 +37,13 @@ Our ideal user has the following characteristics:
 7. Purchases content through apps, or online;
 
 
-#### <i class="icon-file"></i> Functional	Specifications	
+#### <i class="icon-file"></i> Functional	Specifications
 
 **Core	GamePlay**
-The PC (Playable Character) moves in a 2D (two dimensional) plane, exploring levels that extend from the top to the bottom of the screen. 
+The PC (Playable Character) moves in a 2D (two dimensional) plane, exploring levels that extend from the top to the bottom of the screen.
 The playable character is controlled by an accelerometer and will fall on or through certain types of obstacles.
 
-As the PC advances through the levels, specific actions and events will trigger achievements that are rewarded with content, which can be retrieved at any time through the achievements menu screen. 
+As the PC advances through the levels, specific actions and events will trigger achievements that are rewarded with content, which can be retrieved at any time through the achievements menu screen.
 
 The PC’**
 Actions that the PC can perform are:
@@ -52,6 +52,6 @@ Actions that the PC can perform are:
 - Jump
 
 Characters	/	Units
-- Walls 
+- Walls
 - Bouncy Walls (Apply imuplse upwards to PC)
 - Pipes (Where you go in and out)
