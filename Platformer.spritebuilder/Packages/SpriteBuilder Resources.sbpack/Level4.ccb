@@ -56,7 +56,7 @@
 					<key>value</key>
 					<array>
 						<real>70.339309692382812</real>
-						<real>759.934814453125</real>
+						<real>475.934814453125</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -165,7 +165,7 @@
 					<key>value</key>
 					<array>
 						<real>92.545913696289062</real>
-						<real>709.05804443359375</real>
+						<real>425.05801391601562</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -274,7 +274,7 @@
 					<key>value</key>
 					<array>
 						<real>279.0032958984375</real>
-						<real>763.2227783203125</real>
+						<real>479.22274780273438</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -383,7 +383,7 @@
 					<key>value</key>
 					<array>
 						<real>263.1234130859375</real>
-						<real>714.8343505859375</real>
+						<real>430.8343505859375</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -2098,7 +2098,7 @@
 										<key>value</key>
 										<array>
 											<real>12.031402587890625</real>
-											<real>-130.05311584472656</real>
+											<real>-142.05311584472656</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -2431,8 +2431,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>29.025506973266602</real>
-											<real>-116.49455261230469</real>
+											<real>28.987861633300781</real>
+											<real>-130.05311584472656</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -2457,7 +2457,7 @@
 										<key>type</key>
 										<string>Degrees</string>
 										<key>value</key>
-										<real>22.5</real>
+										<real>18.393295288085938</real>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -3256,7 +3256,7 @@
 										<key>value</key>
 										<array>
 											<real>32.987861633300781</real>
-											<real>-193.05311584472656</real>
+											<real>-189.05311584472656</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -3292,6 +3292,8 @@
 										<string>BlockSmall.ccb</string>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -5924,8 +5926,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

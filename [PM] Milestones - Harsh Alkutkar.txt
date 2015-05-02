@@ -15,7 +15,7 @@ Week 3. April 7.
 (Done.) Progression Map. 
 
 Week 4. April 14. 
-(In progress) More levels (6 levels) and playtesting and finilize the difficluty of levels. 
+(Done.) More levels (6 levels) and playtesting and finilize the difficluty of levels. 
 (Done.) HUD. Head-up display. 
 
 Week 5. 
@@ -24,7 +24,7 @@ Week 5.
 (Done.) Facebook integration. 
 
 Week 6.  
-(Todo.) Analytics. 
+(Done.) Mix panel Analytics. 
 (Done.) Make a user tutorial. 
 
 
